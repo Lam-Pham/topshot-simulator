@@ -16,7 +16,7 @@ export default function Landing() {
         </div>
       </div>
 
-      <p class="col-span-2 ml-12 text-5xl leading-tight">According to the simulator, <br/>you have a <span class="underline text-yellow-500">20.7%</span> chance of copping the Cool Cats 3 pack.</p>
+      <p class="col-span-2 ml-12 text-5xl leading-tight">According to the simulator, <br/>you have a <span class="underline text-purple-500">20.7%</span> chance of copping the Cool Cats 3 pack.</p>
 
       <div class="col-start-2 col-span-1 mt-36">
         

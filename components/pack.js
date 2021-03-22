@@ -4,11 +4,19 @@ import base from "../public/base.json";
 
 export default function Pack() {
 
-    const [momentOne, setMomentOne] = useState(['???','']);
-    const [momentTwo, setMomentTwo] = useState(['???','']);
-    const [momentThree, setMomentThree] = useState(['???','']);
-    const [momentFour, setMomentFour] = useState(['???','']);
-    const [coolCat, setCoolCat] = useState(['???','']);
+    const [momentOne, setMomentOne] = useState('???\n\n');
+    const [momentTwo, setMomentTwo] = useState('???\n\n');
+    const [momentThree, setMomentThree] = useState('???\n\n');
+    const [momentFour, setMomentFour] = useState('???\n\n');
+    const [coolCat, setCoolCat] = useState('???\n\n');
+
+    const resetPack = () => {
+        setMomentOne('???\n\n');
+        setMomentTwo('???\n\n');
+        setMomentThree('???\n\n');
+        setMomentFour('???\n\n');
+        setCoolCat('???\n\n');
+    }
 
     function getRandomArbitrary(min, max) {
       return Math.round(Math.random() * (max - min) + min);
@@ -21,46 +29,43 @@ export default function Pack() {
 
     function getRandomCoolCat(){
         let key = getRandomArbitrary(1,75001)
-        return coolCat[key]
+        return coolCats[key][0]
     }
 
     return (
       <div class="grid grid-cols-3 mt-96 gap-x-36 gap-y-36">
-
-        <div class="col-span-1 col-start-1 border-2 border-black leading-8 p-8">
-            <button onClick={() => setMomentOne(getRandomBase())}
-            class="border-2 border-b-4 focus:outline-none active:translate-y-1 transform duration-200 border-black bg-white rounded-full py-2 px-8 font-bold hover:bg-gray-200">
-                {momentOne[1]}
+        
+            <div class="col-start-1 col-span-1 mb-4">
+            <button onClick={() => resetPack()}
+            class="border-2 border-b-4 border-black focus:outline-none bg-white rounded-full py-2 px-8 font-bold hover:bg-purple-300">
+                simulate pack
             </button>
-        </div>
-
-        <div class="col-span-1 border-2 border-black leading-8 p-8">
-            <button onClick={() => setcoolCat(getRandomCoolCat())} 
-            class="border-2 border-b-4 focus:outline-none active:translate-y-1 transform duration-200 border-black bg-white rounded-full py-2 px-8 font-bold hover:bg-gray-200">
-                {coolCat[0]}
+            </div>
+        
+            <button onClick={() => setTimeout(setMomentOne(getRandomBase()), 2000)}
+            class="whitespace-pre-wrap col-span-1 col-start-1 border-2 border-b-4 focus:outline-none border-black p-16 font-bold hover:bg-gray-300">
+                {momentOne}
             </button>
-        </div>
 
-        <div class="col-span-1 border-2 border-black leading-8 p-8">
-            <button onClick={() => setMomentTwo({momentTwo}[1]=getRandomBase())} 
-            class="border-2 border-b-4 focus:outline-none active:translate-y-1 transform duration-200 border-black bg-white rounded-full py-2 px-8 font-bold hover:bg-gray-200">
+            <button onClick={() => setCoolCat(getRandomCoolCat())} 
+            class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black p-16 font-bold hover:bg-blue-300">
+                {coolCat}
+            </button>
+
+            <button onClick={() => setMomentTwo(getRandomBase())} 
+            class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black p-16 font-bold hover:shadow-xl hover:bg-gray-300">
                 {momentTwo}
             </button>
-        </div>
-
-        <div class="col-span-1 border-2 border-black leading-8 p-8">
+        
             <button onClick={() => setMomentThree(getRandomBase())} 
-            class="border-2 border-b-4 focus:outline-none active:translate-y-1 transform duration-200 border-black bg-white rounded-full py-2 px-8 font-bold hover:bg-gray-200">
-                {momentThree[0]}
+            class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black p-16 font-bold hover:bg-gray-300">
+                {momentThree}
             </button>
-        </div>
 
-        <div class="col-span-1 border-2 border-black leading-8 p-8">
             <button onClick={() => setMomentFour(getRandomBase())} 
-            class="border-2 border-b-4 focus:outline-none active:translate-y-1 transform duration-200 border-black bg-white rounded-full py-2 px-8 font-bold hover:bg-gray-200">
-                {momentFour[0]}
+            class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black p-16 font-bold hover:bg-gray-300">
+                {momentFour}
             </button>
-        </div>
 
       </div>
     )

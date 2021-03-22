@@ -3,17 +3,25 @@ import React, { useState } from 'react';
 export default function Drop() {
 
     const [place, setPlace] = useState('?????');
+    const [message, setMessage] = useState('good luck!')
 
     function getRandomArbitrary(min, max) {
-      return Math.round(Math.random() * (max - min) + min);
+      let number = Math.round(Math.random() * (max - min) + min);
+      if(number > 67500){
+        setMessage("try again. 😭 😭 😭")
+      }
+      else{
+        setMessage("you're in! 🎉 🎉 🎉")
+      }
+      return number
     }
 
     return (
       <div class="grid grid-cols-2 mt-12">
 
         <div class="col-start-1 col-span-1 mb-4">
-          <button onClick={() => setPlace(getRandomArbitrary(1,325000))}
-          class="border-2 border-black bg-white rounded-full py-2 px-8 font-bold transform hover:-translate-y-2 hover:shadow-2xl duration-300">
+          <button onClick={() => {setPlace(getRandomArbitrary(1,325000))}}
+          class="border-2 border-b-4 border-black focus:outline-none bg-white rounded-full py-2 px-8 font-bold hover:bg-purple-300">
             simulate drop
           </button>
         </div>
@@ -27,7 +35,7 @@ export default function Drop() {
           </div>
         </div>
   
-        <p class="col-span-1 ml-12 text-5xl leading-tight">you got<span class="underline text-yellow-500">18.1%</span> the 2021 All-Star pack.</p>
+        <p class="col-span-1 ml-12 text-5xl leading-tight">{message}</p>
   
 
       </div>
