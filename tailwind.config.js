@@ -11,14 +11,10 @@ module.exports = {
   },
   plugins: [
     require('tailwindcss-animatecss')({
-      classes: ['animate__animated', 'animate__fadeIn', 'animate__bounceIn', 'animate__lightSpeedOut'],
+      classes: ['animate__animated', 'animate__fadeIn', 'animate__flip', 'animate__delay', 'animate__headShake', 'animate__slow'],
       settings: {
-        animatedSpeed: 3000,
-        heartBeatSpeed: 1000,
-        hingeSpeed: 2000,
-        bounceInSpeed: 750,
-        bounceOutSpeed: 750,
-        animationDelaySpeed: 3000
+        animatedSpeed: 1000,
+        animationDelaySpeed: 1000
       },
       variants: ['responsive', 'hover', 'reduced-motion'],
     }),

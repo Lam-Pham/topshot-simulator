@@ -13,7 +13,7 @@ export default function Drop() {
       else{
         setMessage("you're in! 🎉 🎉 🎉")
       }
-      return number
+      return <span key={Math.random()} class="animate__animated animate__fadeIn animate__slow font-bold">{number}🎉</span>
     }
 
     return (
@@ -29,8 +29,8 @@ export default function Drop() {
         <div class="col-span-1 col-start-1 border-2 border-black leading-8 p-8">
           <p class="font-bold">the drop</p>
           <div class="grid grid-cols-4">
-            <p class="col-span-3">number of users in line ahead of you: <span class="font-bold">{place}</span></p>
-            <p class="col-span-1"> </p>
+            <p class="col-span-3">number of users in line ahead of you: {place}</p>
+            <p class="col-span-3 col-start-1">message: you're in!</p>
 
           </div>
         </div>

@@ -24,12 +24,15 @@ export default function Pack() {
 
     function getRandomBase(){
         let key = getRandomArbitrary(1,300001)
-        return base[key][0]
+        let b = base[key][0]
+        return <p key={Math.random()} class="animate__animated animate__flip">{b}</p>
     }
 
     function getRandomCoolCat(){
-        let key = getRandomArbitrary(1,75001)
-        return coolCats[key][0]
+        let key = getRandomArbitrary(1,5)
+        let serial = getRandomArbitrary(1,15000)
+        let cc = coolCats[key][0]
+        return <p key={Math.random()} class="animate__animated animate__flip">{cc} #{serial}/15000</p>
     }
 
     return (
@@ -43,27 +46,27 @@ export default function Pack() {
             </div>
         
             <button onClick={() => setMomentOne(getRandomBase())}
-            class="whitespace-pre-wrap col-span-1 col-start-1 border-2 border-b-4 focus:outline-none border-black p-16 font-bold hover:bg-gray-300">
+            class="whitespace-pre-wrap col-span-1 col-start-1 border-2 border-b-4 focus:outline-none border-black py-24 px-16 font-bold hover:bg-grey-300">
                 {momentOne}
             </button>
 
             <button onClick={() => setCoolCat(getRandomCoolCat())} 
-            class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black p-16 font-bold hover:bg-blue-300">
+            class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black py-24 px-16 font-bold hover:bg-blue-300">
                 {coolCat}
             </button>
 
             <button onClick={() => setMomentTwo(getRandomBase())} 
-            class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black p-16 font-bold hover:shadow-xl hover:bg-gray-300">
+            class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black py-24 px-16 font-bold hover:shadow-xl hover:bg-gray-300">
                 {momentTwo}
             </button>
         
             <button onClick={() => setMomentThree(getRandomBase())} 
-            class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black p-16 font-bold hover:bg-gray-300">
+            class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black py-24 px-16 font-bold hover:bg-gray-300">
                 {momentThree}
             </button>
 
             <button onClick={() => setMomentFour(getRandomBase())} 
-            class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black p-16 font-bold hover:bg-gray-300">
+            class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black py-24 px-16 font-bold hover:bg-gray-300">
                 {momentFour}
             </button>
 
