@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import coolCats from "../public/coolCats.json";
 import base from "../public/base.json";
 
@@ -42,7 +42,7 @@ export default function Pack() {
             </button>
             </div>
         
-            <button onClick={() => setTimeout(setMomentOne(getRandomBase()), 2000)}
+            <button onClick={() => setMomentOne(getRandomBase())}
             class="whitespace-pre-wrap col-span-1 col-start-1 border-2 border-b-4 focus:outline-none border-black p-16 font-bold hover:bg-gray-300">
                 {momentOne}
             </button>
