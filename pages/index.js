@@ -6,7 +6,7 @@ import Drop from "../components/drop"
 import Pack from "../components/pack"
 import Menu from "../components/menu" 
 import SmallContainer from "../components/smallContainer" 
-import HallOfFame from '../components/hallOfFame'
+import Founders from '../components/founders'
 
 export default function Home() {
   
@@ -25,7 +25,8 @@ export default function Home() {
           <Landing/>
           <Drop/>
           <Pack/>
-          <HallOfFame/>
+          <Founders/>
+          <Founders/>
         </SmallContainer>
       </Container>
     
