@@ -11,7 +11,7 @@ module.exports = {
   },
   plugins: [
     require('tailwindcss-animatecss')({
-      classes: ['animate__animated', 'animate__fadeIn', 'animate__flip', 'animate__delay', 'animate__headShake', 'animate__slow'],
+      classes: ['animate__animated', 'animate__fadeIn', 'animate__flip', 'animate__delay', 'animate__headShake', 'animate__slow', 'animate__flipInY'],
       settings: {
         animatedSpeed: 1000,
         animationDelaySpeed: 1000

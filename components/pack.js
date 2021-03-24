@@ -13,12 +13,23 @@ export default function Pack() {
     const [momentFour, setMomentFour] = useState('???\n\n');
     const [coolCat, setCoolCat] = useState('???\n\n');
 
+    const [disableMomentOne, setDisableMomentOne] = useState(false);
+    const [disableMomentTwo, setDisableMomentTwo] = useState(false);
+    const [disableMomentThree, setDisableMomentThree] = useState(false);
+    const [disableMomentFour, setDisableMomentFour] = useState(false);
+    const [disableCoolCat, setDisableCoolCat] = useState(false);
+
     const resetPack = () => {
-        setMomentOne('???\n\n');
-        setMomentTwo('???\n\n');
-        setMomentThree('???\n\n');
-        setMomentFour('???\n\n');
-        setCoolCat('???\n\n');
+        setMomentOne(<p key={Math.random()} class="animate__animated animate__flipInY">???<br/><br/></p>);
+        setMomentTwo(<p key={Math.random()} class="animate__animated animate__flipInY">???<br/><br/></p>);
+        setMomentThree(<p key={Math.random()} class="animate__animated animate__flipInY">???<br/><br/></p>);
+        setMomentFour(<p key={Math.random()} class="animate__animated animate__flipInY">???<br/><br/></p>);
+        setCoolCat(<p key={Math.random()} class="animate__animated animate__flipInY">???<br/><br/></p>);
+        setDisableMomentOne(false);
+        setDisableMomentTwo(false);
+        setDisableMomentThree(false);
+        setDisableMomentFour(false);
+        setDisableCoolCat(false);
     }
 
     function getRandomArbitrary(min, max) {
@@ -55,7 +66,8 @@ export default function Pack() {
         let key = getRandomArbitrary(1,38)
         let b = threeFive[key][0]
         let serial = threeFive[key][1]
-        return <p key={Math.random()} class="animate__animated animate__flip">{b}<br/>{serial}</p>
+        let link = threeFive[key][2]
+        return <p key={Math.random()} class="animate__animated animate__flip underline">{b}<br/>{serial}</p>
     }
 
     function getRandomCoolCat(){
@@ -69,40 +81,41 @@ export default function Pack() {
     }
 
     return (
-      <div class="grid grid-cols-3 mt-96 gap-x-36 gap-y-36">
+      <div class="mt-96">
         
-            <div class="col-start-1 col-span-1 mb-4">
-            <button onClick={() => resetPack()}
-            class="border-2 border-b-4 border-black focus:outline-none bg-white rounded-full py-2 px-8 font-bold hover:bg-purple-300">
-                simulate pack
-            </button>
+            <div class="mb-8">
+                <button onClick={() => resetPack()}
+                class="border-2 border-b-4 border-black focus:outline-none bg-white rounded-full py-2 px-8 font-bold hover:bg-purple-300">
+                    simulate pack
+                </button>
             </div>
-        
-            <button onClick={() => setMomentOne(getRandomBaseSerial())}
-            class="whitespace-pre-wrap col-span-1 col-start-1 border-2 border-b-4 focus:outline-none border-black py-24 px-16 font-bold hover:bg-grey-300">
-                {momentOne}
-            </button>
 
-            <button onClick={() => setCoolCat(getRandomCoolCat())} 
-            class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black py-24 px-16 font-bold hover:bg-blue-300">
-                {coolCat}
-            </button>
+            <div class="grid grid-cols-3 gap-x-36 gap-y-24">
+                <button onClick={() => {setMomentOne(getRandomBaseSerial()); setDisableMomentOne(true)}} disabled={disableMomentOne}
+                class="whitespace-pre-wrap col-span-1 col-start-1 border-2 border-b-4 focus:outline-none border-black py-16 px-16 font-bold hover:bg-gray-300">
+                    {momentOne}
+                </button>
 
-            <button onClick={() => setMomentTwo(getRandomBaseSerial())} 
-            class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black py-24 px-16 font-bold hover:shadow-xl hover:bg-gray-300">
-                {momentTwo}
-            </button>
-        
-            <button onClick={() => setMomentThree(getRandomBaseSerial())} 
-            class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black py-24 px-16 font-bold hover:bg-gray-300">
-                {momentThree}
-            </button>
+                <button onClick={() => {setCoolCat(getRandomCoolCat()); setDisableCoolCat(true)}} disabled={disableCoolCat} 
+                class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black py-16 px-16 font-bold hover:bg-blue-300">
+                    {coolCat}
+                </button>
 
-            <button onClick={() => setMomentFour(getRandomBaseSerial())} 
-            class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black py-24 px-16 font-bold hover:bg-gray-300">
-                {momentFour}
-            </button>
+                <button onClick={() => {setMomentTwo(getRandomBaseSerial()); setDisableMomentTwo(true)}} disabled={disableMomentTwo}
+                class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black py-16 px-16 font-bold hover:bg-gray-300">
+                    {momentTwo}
+                </button>
+            
+                <button onClick={() => {setMomentThree(getRandomBaseSerial()); setDisableMomentThree(true)}} disabled={disableMomentThree}
+                class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black py-16 px-16 font-bold hover:bg-gray-300">
+                    {momentThree}
+                </button>
 
+                <button onClick={() => {setMomentFour(getRandomBaseSerial()); setDisableMomentFour(true)}} disabled={disableMomentFour}
+                class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black py-16 px-16 font-bold hover:bg-gray-300">
+                    {momentFour}
+                </button>
+            </div>
       </div>
     )
   }
