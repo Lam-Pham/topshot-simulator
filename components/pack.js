@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import coolCats from "../public/coolCats.json";
-import base from "../public/base.json";
+import threeFive from "../public/threeFive.json";
+import twelve from "../public/twelve.json";
+import four from "../public/four.json";
+
 
 export default function Pack() {
 
@@ -22,16 +25,46 @@ export default function Pack() {
       return Math.round(Math.random() * (max - min) + min);
     }
 
-    function getRandomBase(){
-        let key = getRandomArbitrary(1,300001)
-        let b = base[key][0]
-        return <p key={Math.random()} class="animate__animated animate__flip">{b}</p>
+    function getRandomBaseSerial(){
+        let number = getRandomArbitrary(1,1000)
+        if (number < 954){
+            return getRandomBaseThreeFive()
+        }else if (number < 993){
+            return getRandomBaseTwelve()
+        }else {
+            return getRandomBaseFour()
+        }
+        
+    }
+
+    function getRandomBaseFour(){
+        let key = getRandomArbitrary(1,4)
+        let b = four[key][0]
+        let serial = four[key][1]
+        return <p key={Math.random()} class="animate__animated animate__flip">{b}<br/>{serial}</p>
+    }
+
+    function getRandomBaseTwelve(){
+        let key = getRandomArbitrary(1,8)
+        let b = twelve[key][0]
+        let serial = twelve[key][1]
+        return <p key={Math.random()} class="animate__animated animate__flip">{b}<br/>{serial}</p>
+    }
+
+    function getRandomBaseThreeFive(){
+        let key = getRandomArbitrary(1,38)
+        let b = threeFive[key][0]
+        let serial = threeFive[key][1]
+        return <p key={Math.random()} class="animate__animated animate__flip">{b}<br/>{serial}</p>
     }
 
     function getRandomCoolCat(){
         let key = getRandomArbitrary(1,5)
         let serial = getRandomArbitrary(1,15000)
         let cc = coolCats[key][0]
+        if (cc == "Shai Gilgeous-Alexander"){
+            cc = <span class="text-xs">{cc}</span>
+        }
         return <p key={Math.random()} class="animate__animated animate__flip">{cc} #{serial}/15000</p>
     }
 
@@ -45,7 +78,7 @@ export default function Pack() {
             </button>
             </div>
         
-            <button onClick={() => setMomentOne(getRandomBase())}
+            <button onClick={() => setMomentOne(getRandomBaseSerial())}
             class="whitespace-pre-wrap col-span-1 col-start-1 border-2 border-b-4 focus:outline-none border-black py-24 px-16 font-bold hover:bg-grey-300">
                 {momentOne}
             </button>
@@ -55,17 +88,17 @@ export default function Pack() {
                 {coolCat}
             </button>
 
-            <button onClick={() => setMomentTwo(getRandomBase())} 
+            <button onClick={() => setMomentTwo(getRandomBaseSerial())} 
             class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black py-24 px-16 font-bold hover:shadow-xl hover:bg-gray-300">
                 {momentTwo}
             </button>
         
-            <button onClick={() => setMomentThree(getRandomBase())} 
+            <button onClick={() => setMomentThree(getRandomBaseSerial())} 
             class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black py-24 px-16 font-bold hover:bg-gray-300">
                 {momentThree}
             </button>
 
-            <button onClick={() => setMomentFour(getRandomBase())} 
+            <button onClick={() => setMomentFour(getRandomBaseSerial())} 
             class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black py-24 px-16 font-bold hover:bg-gray-300">
                 {momentFour}
             </button>
