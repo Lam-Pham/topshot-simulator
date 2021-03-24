@@ -81,7 +81,7 @@ export default function Pack() {
     }
 
     return (
-      <div class="mt-96">
+      <div class="mt-48">
         
             <div class="mb-8">
                 <button onClick={() => resetPack()}
