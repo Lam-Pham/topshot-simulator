@@ -5,6 +5,8 @@ import Header from "../components/header"
 import Landing from "../components/landing"
 import Drop from "../components/drop"
 import Pack from "../components/pack"
+import Menu from "../components/menu" 
+import SmallContainer from "../components/smallContainer" 
 
 export default function Home() {
   
@@ -16,11 +18,16 @@ export default function Home() {
       </Head>
 
       <Container>
-        <Header/>
-        <Landing/>
-        <Drop/>
-        <Pack/>
-        <Pack/>
+
+        <Menu/>
+
+        <SmallContainer>
+          <Header/>
+          <Landing/>
+          <Drop/>
+          <Pack/>
+          <Pack/>
+        </SmallContainer>
       </Container>
     
     </Layout>

@@ -29,7 +29,7 @@ export default function Drop() {
     function getPlace() {
       let number = getRandomArbitrary(1,325000)
       getMessage(number)
-      return <span key={Math.random()} class="animate__animated animate__fadeIn animate__slow font-bold">{number}</span>
+      return <span key={Math.random()} class="animate__animated animate__fadeIn animate__slower font-bold">{number}</span>
     }
 
     function getMessage(number) {
@@ -40,7 +40,7 @@ export default function Drop() {
       else{
         note = goodMessages[getRandomArbitrary(0,4)]
       }
-      setMessage(<span key={Math.random()} class="animate__animated animate__fadeIn animate__slow">{note}</span>)
+      setMessage(<span key={Math.random()} class="animate__animated animate__fadeIn animate__slower">{note}</span>)
     }
 
     return (
@@ -48,7 +48,7 @@ export default function Drop() {
 
         <div class="col-start-1 col-span-1 mb-4">
           <button onClick={() => {setPlace(getPlace())}}
-          class="border-2 border-b-4 border-black focus:outline-none bg-white rounded-full py-2 px-8 font-bold hover:bg-purple-300">
+          class="transform active:translate-y-1 duration-200 border-2 border-b-4 border-black focus:outline-none bg-white rounded-full py-2 px-8 font-bold hover:bg-purple-300">
             simulate drop
           </button>
         </div>
