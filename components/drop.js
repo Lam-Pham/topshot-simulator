@@ -1,19 +1,20 @@
 import React, { useState } from 'react';
+import Image from 'next/image'
 
 export default function Drop() {
 
     const [place, setPlace] = useState('?????');
-    const [message, setMessage] = useState('good luck!')
 
     function getRandomArbitrary(min, max) {
       let number = Math.round(Math.random() * (max - min) + min);
+      let message = ""
       if(number > 67500){
-        setMessage("try again. 😭 😭 😭")
+        message = "😭"
       }
       else{
-        setMessage("you're in! 🎉 🎉 🎉")
+        message = "🎉"
       }
-      return <span key={Math.random()} class="animate__animated animate__fadeIn animate__slow font-bold">{number}🎉</span>
+      return <span key={Math.random()} class="animate__animated animate__fadeIn animate__slow font-bold">{number}</span>
     }
 
     return (
@@ -35,7 +36,16 @@ export default function Drop() {
           </div>
         </div>
   
-        <p class="col-span-1 ml-12 text-5xl leading-tight">{message}</p>
+        <div class="col-span-1 ml-48 animate__animated hover:animate__headShake">
+         <Image
+            src="/pack_cool_cats.png"
+            alt="Cool Cats Pack"
+            height={196}
+            width={196}
+            quality={100}
+            layout="intrinsic"
+          />
+        </div>
   
 
       </div>
