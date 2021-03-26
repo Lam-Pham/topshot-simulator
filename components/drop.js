@@ -44,9 +44,12 @@ export default function Drop() {
     }
 
     return (
-      <div class="mt-80">
+      <div class="mt-96">
 
-        <div name="drop" class="border-b border-black"></div>
+        <div name="drop" class="space-y-4">
+          <h1 class="text-4xl ">drop</h1>
+          <div class="border-b border-black"></div>
+        </div>
 
         <div class="grid grid-cols-2 mt-24">
 
@@ -67,7 +70,7 @@ export default function Drop() {
             </div>
           </div>
     
-          <div class="col-span-1 ml-48 animate__animated hover:animate__headShake">
+          <div class="col-span-1 ml-36 animate__animated hover:animate__headShake">
           <Image
               src="/pack_cool_cats.png"
               alt="Cool Cats Pack"

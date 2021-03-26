@@ -81,9 +81,12 @@ export default function Pack() {
     }
 
     return (
-      <div class="mt-64">
+      <div class="mt-80">
 
-            <div name="pack" class="border-b border-black"></div>
+            <div name="pack" class="space-y-4">
+                <h1 class="text-4xl ">pack</h1>
+                <div class="border-b border-black"></div>
+            </div>
            
             <div class="mb-8 mt-24">
                 <button onClick={() => resetPack()}

@@ -7,6 +7,7 @@ import Pack from "../components/pack"
 import Menu from "../components/menu" 
 import SmallContainer from "../components/smallContainer" 
 import Founders from '../components/founders'
+import RunDown from '../components/runDown'
 
 export default function Home() {
   
@@ -23,9 +24,9 @@ export default function Home() {
 
         <SmallContainer>
           <Landing/>
+          <RunDown/>
           <Drop/>
           <Pack/>
-          <Founders/>
           <Founders/>
         </SmallContainer>
       </Container>

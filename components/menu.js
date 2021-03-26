@@ -1,4 +1,5 @@
 import * as Scroll from 'react-scroll';
+import BottomMenu from "../components/bottomMenu" 
 
 export default function Menu() {
 
@@ -15,9 +16,11 @@ export default function Menu() {
                 <div class="border-b border-black"></div>
             </div>
             <div class="space-y-0">
-                <Link to="drop" smooth={true} offset={-96} class="cursor-pointer text-base hover:opacity-50 duration-200">drop</Link>
+                <Link to="runDown" smooth={true} offset={-48} class="cursor-pointer text-base hover:opacity-50 duration-200">run-down</Link>
                 <br/>
-                <Link to="pack" smooth={true} offset={-96} class="cursor-pointer text-base hover:opacity-50 duration-200">pack</Link>
+                <Link to="drop" smooth={true} offset={-40} class="cursor-pointer text-base hover:opacity-50 duration-200">drop</Link>
+                <br/>
+                <Link to="pack" smooth={true} offset={-40} class="cursor-pointer text-base hover:opacity-50 duration-200">pack</Link>
                 <br/>
                 <Link to="founders" smooth={true} offset={-40} class="cursor-pointer text-base hover:opacity-50 duration-200">founders</Link>
                 
@@ -25,7 +28,7 @@ export default function Menu() {
             <p class="invisible">filler</p>
             <p class="invisible">filler</p>
             <div class="space-y-0">
-                <p class="text-sm"><a href="https://github.com/Lam-Pham" class="hover:opacity-50 duration-200 cursor-pointer" target="_blank">Github</a> ↗</p>
+                <BottomMenu/>
             </div>
 
     </div>
