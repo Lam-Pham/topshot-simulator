@@ -1,5 +1,4 @@
 import * as Scroll from 'react-scroll';
-import BottomMenu from "../components/bottomMenu" 
 
 export default function Menu() {
 
@@ -27,9 +26,6 @@ export default function Menu() {
             </div>
             <p class="invisible">filler</p>
             <p class="invisible">filler</p>
-            <div class="space-y-0">
-                <BottomMenu/>
-            </div>
 
     </div>
 

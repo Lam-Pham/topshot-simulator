@@ -8,7 +8,6 @@ export default function Help() {
         </div>
         <div class="grid grid-cols-3 mt-24 gap-x-24">
           <p class="col-span-1 text-3xl">
-          here's a list of some "mini-roles".<br/><br/>
           <a class="underline text-blue-500 hover:text-blue-700" href="mailto:topshotsimulator@gmail.com">shoot me an email</a> if you're interested ♥<br/><br/>
           no experience necessary!
           </p>
