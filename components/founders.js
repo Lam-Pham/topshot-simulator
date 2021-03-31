@@ -60,7 +60,7 @@ export default function Founders() {
                     </div>
                 </p>
 
-                <Link href="/thankshomie"><button class="col-start-2 col-span-1 transform active:translate-y-1 duration-200 border-2 border-b-4 border-black focus:outline-none bg-white rounded-full py-2 px-8 font-bold hover:bg-red-400 bg-red-300 text-sm">donate to become a founder!</button></Link>
+                <Link href="/thankshomie"><button class="col-start-2 col-span-1 transform active:translate-y-1 duration-200 -mt-12 border-2 border-b-4 border-black focus:outline-none bg-white rounded-full py-2 px-8 font-bold hover:bg-red-400 bg-red-300 text-sm">donate to become a founder!</button></Link>
                 <Link href="/helpwanted"><button class="col-start-2 col-span-1 mb-24 transform active:translate-y-1 duration-200 -mt-12 border-2 border-b-4 border-black focus:outline-none bg-white rounded-full py-2 px-8 font-bold hover:bg-yellow-300 bg-yellow-200 text-sm">...or help us to become one!</button></Link>
         </div>
       </div>
