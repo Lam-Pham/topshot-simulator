@@ -4,11 +4,11 @@ export default function Landing() {
   return (
     <div>
       <div name="landing" class="space-y-6">
-        <span class="block text-base invisible">probably not best practice</span>
+        <span class="block 2xl:text-xl text-base invisible">probably not best practice</span>
         <div class="border-b border-black"></div>
       </div>
       <div class="mt-24">
-        <p class="text-5xl">Simulate NBA Top Shot <span class="border-b-4 border-red-500">drops</span>  +  <span class="border-b-4 border-blue-500">packs</span> !</p>
+        <p class="2xl:text-6xl text-5xl">Simulate NBA Top Shot <span class="border-b-4 border-red-500">drops</span>  +  <span class="border-b-4 border-blue-500">packs</span> !</p>
         <br/>
         <p class="text-3xl">featured pack: <span class="border-b-4 border-purple-500">Cool Cats 3</span></p>
       </div>

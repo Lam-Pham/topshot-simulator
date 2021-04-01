@@ -8,10 +8,13 @@ export default function Drop() {
 
     let goodMessages = [
       "you did it! 🔥",
-      "sHEESH 😜",
+      "sHEEE 😜",
       "let's goooo 🚀",
       "dreams do come true ✨",
-      "woot woot 🥳"
+      "woot woot 🥳",
+      "pop off! 🙌",
+      "BREAKING NEWS: You're copping a pack, sources tell WOJ 🚨",
+      "we got a BIG BALLER up in here! 💥"
     ]
 
     let badMessages = [
@@ -19,7 +22,12 @@ export default function Drop() {
       "you thought 😭",
       "get out the line scrub 🤬",
       "can't even get a fake pack drop 🥴",
-      "go read a book 😓"
+      "go read a book 😓",
+      "you should find a new hobby 💩",
+      "you're probably a Clippers fan, huh 🤡",
+      "well that was anti-climatic ☹️",
+      "sorry, maybe next drop 🤕",
+      "this is starting to get sad 🥱"
     ]
 
     function getRandomArbitrary(min, max) {
@@ -35,10 +43,10 @@ export default function Drop() {
     function getMessage(number) {
       let note = ""
       if(number > 67500){
-        note = badMessages[getRandomArbitrary(0,4)]
+        note = badMessages[getRandomArbitrary(0,8)]
       }
       else{
-        note = goodMessages[getRandomArbitrary(0,4)]
+        note = goodMessages[getRandomArbitrary(0,7)]
       }
       setMessage(<span key={Math.random()} class="animate__animated animate__fadeIn animate__slower">{note}</span>)
     }
@@ -47,7 +55,7 @@ export default function Drop() {
       <div class="mt-96">
 
         <div name="drop" class="space-y-4">
-          <h1 class="text-4xl ">drop</h1>
+          <h1 class="text-4xl 2xl:pb-1">drop</h1>
           <div class="border-b border-black"></div>
         </div>
 
@@ -79,6 +87,9 @@ export default function Drop() {
               quality={100}
               layout="intrinsic"
             />
+          </div>
+
+          <div class="col-span-1 ml-36">
           </div>
   
         </div>

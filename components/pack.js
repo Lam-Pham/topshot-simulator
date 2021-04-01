@@ -20,11 +20,11 @@ export default function Pack() {
     const [disableCoolCat, setDisableCoolCat] = useState(false);
 
     const resetPack = () => {
-        setMomentOne(<p key={Math.random()} class="animate__animated animate__flipInY">???<br/><br/></p>);
-        setMomentTwo(<p key={Math.random()} class="animate__animated animate__flipInY">???<br/><br/></p>);
-        setMomentThree(<p key={Math.random()} class="animate__animated animate__flipInY">???<br/><br/></p>);
-        setMomentFour(<p key={Math.random()} class="animate__animated animate__flipInY">???<br/><br/></p>);
-        setCoolCat(<p key={Math.random()} class="animate__animated animate__flipInY">???<br/><br/></p>);
+        setMomentOne(<p key={Math.random()} class="animate__animated animate__flipInY"><br/><br/><br/><br/><br/><br/>???<br/><br/><br/><br/><br/><br/><br/><br/></p>);
+        setMomentTwo(<p key={Math.random()} class="animate__animated animate__flipInY"><br/><br/><br/><br/><br/><br/>???<br/><br/><br/><br/><br/><br/><br/><br/></p>);
+        setMomentThree(<p key={Math.random()} class="animate__animated animate__flipInY"><br/><br/><br/><br/><br/><br/>???<br/><br/><br/><br/><br/><br/><br/><br/></p>);
+        setMomentFour(<p key={Math.random()} class="animate__animated animate__flipInY"><br/><br/><br/><br/><br/><br/>???<br/><br/><br/><br/><br/><br/><br/><br/></p>);
+        setCoolCat(<p key={Math.random()} class="animate__animated animate__flipInY"><br/><br/><br/><br/><br/><br/>???<br/><br/><br/><br/><br/><br/><br/><br/></p>);
         setDisableMomentOne(false);
         setDisableMomentTwo(false);
         setDisableMomentThree(false);
@@ -52,39 +52,42 @@ export default function Pack() {
         let key = getRandomArbitrary(1,4)
         let b = four[key][0]
         let serial = four[key][1]
-        return <p key={Math.random()} class="animate__animated animate__flip">{b}<br/>{serial}</p>
+        return <p key={Math.random()} class="animate__animated animate__flipInY">{b}<br/>{serial}</p>
     }
 
     function getRandomBaseTwelve(){
         let key = getRandomArbitrary(1,8)
         let b = twelve[key][0]
         let serial = twelve[key][1]
-        return <p key={Math.random()} class="animate__animated animate__flip">{b}<br/>{serial}</p>
+        return <p key={Math.random()} class="animate__animated animate__flipInY">{b}<br/>{serial}</p>
     }
 
     function getRandomBaseThreeFive(){
         let key = getRandomArbitrary(1,38)
         let b = threeFive[key][0]
         let serial = threeFive[key][1]
-        let link = threeFive[key][2]
-        return <p key={Math.random()} class="animate__animated animate__flip underline">{b}<br/>{serial}</p>
+        return <p key={Math.random()} class="animate__animated animate__flipInY underline">{b}<br/>{serial}</p>
     }
 
     function getRandomCoolCat(){
         let key = getRandomArbitrary(1,5)
         let serial = getRandomArbitrary(1,15000)
         let cc = coolCats[key][0]
+        let src = coolCats[key][2]
         if (cc == "Shai Gilgeous-Alexander"){
             cc = <span class="text-xs">{cc}</span>
         }
-        return <p key={Math.random()} class="animate__animated animate__flip">{cc} #{serial}/15000</p>
+        return <div>
+                <p key={Math.random()} class="animate__animated animate__flipInY">{cc}<br/>#{serial}/15000</p>
+                <video class="mt-4" loop="" autoplay="" playsinline="" preload="auto"><source src={src} type="video/mp4"></source></video>
+                </div> 
     }
 
     return (
       <div class="mt-80">
 
             <div name="pack" class="space-y-4">
-                <h1 class="text-4xl ">pack</h1>
+                <h1 class="text-4xl 2xl:pb-1">pack</h1>
                 <div class="border-b border-black"></div>
             </div>
            
@@ -102,7 +105,7 @@ export default function Pack() {
                 </button>
 
                 <button onClick={() => {setCoolCat(getRandomCoolCat()); setDisableCoolCat(true)}} disabled={disableCoolCat} 
-                class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black py-16 px-8 font-bold disabled:bg-blue-300 hover:bg-blue-300">
+                class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black py-4 px-4 font-bold disabled:bg-blue-300 hover:bg-blue-300">
                     {coolCat}
                 </button>
 

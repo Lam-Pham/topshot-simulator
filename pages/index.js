@@ -8,6 +8,7 @@ import Menu from "../components/menu"
 import SmallContainer from "../components/smallContainer" 
 import Founders from '../components/founders'
 import RunDown from '../components/runDown'
+import MobileMessage from '../components/mobileMessage'
 
 export default function Home() {
   
@@ -21,7 +22,7 @@ export default function Home() {
       <Container>
 
         <Menu/>
-
+        <MobileMessage/>
         <SmallContainer>
           <Landing/>
           <RunDown/>
