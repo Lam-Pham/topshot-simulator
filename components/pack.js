@@ -93,7 +93,7 @@ export default function Pack() {
            
             <div class="mb-8 mt-24">
                 <button onClick={() => resetPack()}
-                class="transform active:translate-y-1 duration-200 border-2 border-b-4 border-black focus:outline-none bg-white rounded-full py-2 px-8 font-bold hover:bg-purple-300">
+                class="transform active:translate-y-1 duration-200 border-2 border-b-4 border-black focus:outline-none bg-white rounded-full py-2 px-8 font-bold bg-purple-200 hover:bg-purple-400">
                     simulate pack
                 </button>
             </div>

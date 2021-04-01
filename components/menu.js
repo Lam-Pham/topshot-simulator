@@ -17,9 +17,9 @@ export default function Menu() {
             <div class="space-y-0">
                 <Link to="runDown" smooth={true} offset={-40} class="cursor-pointer 2xl:text-xl text-base hover:opacity-50 duration-200">run-down</Link>
                 <br/>
-                <Link to="drop" smooth={true} offset={-40} class="cursor-pointer 2xl:text-xl text-base hover:opacity-50 duration-200">drop</Link>
+                <Link to="drop" smooth={true} offset={-40} class="cursor-pointer 2xl:text-xl text-base hover:opacity-50 duration-200">simulate drop</Link>
                 <br/>
-                <Link to="pack" smooth={true} offset={-40} class="cursor-pointer 2xl:text-xl text-base hover:opacity-50 duration-200">pack</Link>
+                <Link to="pack" smooth={true} offset={-40} class="cursor-pointer 2xl:text-xl text-base hover:opacity-50 duration-200">simulate pack</Link>
                 <br/>
                 <Link to="founders" smooth={true} offset={-40} class="cursor-pointer 2xl:text-xl text-base hover:opacity-50 duration-200">founders</Link>
                 
