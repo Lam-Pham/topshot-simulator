@@ -54,14 +54,14 @@ export default function Drop() {
     return (
       <div class="mt-96">
 
-        <div name="drop" class="space-y-4">
+        <div id="drop" name="drop" class="space-y-4">
           <h1 class="text-4xl 2xl:pb-1">drop</h1>
           <div class="border-b border-black"></div>
         </div>
 
         <div class="grid grid-cols-2 mt-24">
 
-          <div name="drop" class="col-start-1 col-span-1 mb-4">
+          <div class="col-start-1 col-span-1 mb-4">
             <button onClick={() => {setPlace(getPlace())}}
             class="transform active:translate-y-1 duration-200 border-2 border-b-4 border-black focus:outline-none bg-white rounded-full py-2 px-8 font-bold bg-purple-200 hover:bg-purple-400">
               simulate drop

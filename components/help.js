@@ -15,7 +15,7 @@ export default function Help() {
               <p class="text-3xl border-b-2 border-black">"mini-roles"</p>
               <div class="grid grid-cols-4 mt-8 gap-y-16">
                 <p class="col-span-1">01</p>
-                <p class="col-span-3"><span class="font-bold hover:text-blue-500 underline">designer</span><br/><br/>task: design a logo for us!<br/></p>
+                <p class="col-span-3"><span class="font-bold hover:text-blue-500 underline">designer</span><br/><br/>task: design a logo for TS Simulator!<br/></p>
                 <p class="col-span-1">02</p>
                 <p class="col-span-3"><span class="font-bold hover:text-blue-500 underline">???</span><br/><br/>task: you tell me!<br/></p>
               </div>

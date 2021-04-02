@@ -1,4 +1,5 @@
 import * as Scroll from 'react-scroll';
+import Scrollspy from 'react-scrollspy'
 
 export default function Menu() {
 
@@ -15,14 +16,26 @@ export default function Menu() {
                 <div class="border-b border-black"></div>
             </div>
             <div class="space-y-0">
-                <Link to="runDown" smooth={true} offset={-40} class="cursor-pointer 2xl:text-xl text-base hover:opacity-50">run-down</Link>
-                <br/>
-                <Link to="drop" smooth={true} offset={-40} class="cursor-pointer 2xl:text-xl text-base hover:opacity-50">simulate drop</Link>
-                <br/>
-                <Link to="pack" smooth={true} offset={-40} class="cursor-pointer 2xl:text-xl text-base hover:opacity-50">simulate pack</Link>
-                <br/>
-                <Link to="founders" smooth={true} offset={-40} class="cursor-pointer 2xl:text-xl text-base hover:opacity-50">founders</Link>
-                
+                <div class="cursor-pointer 2xl:text-xl text-base hover:opacity-50">
+                    <Scrollspy offset={300} componentTag="div" items={ ['runDown'] } currentClassName="font-bold cursor-pointer 2xl:text-xl text-base hover:opacity-50">
+                        <Link to="runDown" spy={true} smooth={true} offset={-40}>run-down</Link>
+                    </Scrollspy>
+                </div>
+                <div class="cursor-pointer 2xl:text-xl text-base hover:opacity-50">
+                    <Scrollspy offset={400} componentTag="div" items={ ['drop'] } class="cursor-pointer 2xl:text-xl text-base hover:opacity-50" currentClassName="font-bold cursor-pointer 2xl:text-xl text-base hover:opacity-50">
+                        <Link to="drop" spy={true} smooth={true} offset={-40}>simulate drop</Link>
+                    </Scrollspy>
+                </div>
+                <div class="cursor-pointer 2xl:text-xl text-base hover:opacity-50">
+                    <Scrollspy offset={600} componentTag="div" items={ ['pack'] } currentClassName="font-bold cursor-pointer 2xl:text-xl text-base hover:opacity-50">
+                        <Link to="pack" smooth={true} offset={-40}>simulate pack</Link>
+                    </Scrollspy>
+                </div>
+                <div class="cursor-pointer 2xl:text-xl text-base hover:opacity-50">
+                    <Scrollspy offset={500} componentTag="div" items={ ['founders'] } currentClassName="font-bold cursor-pointer 2xl:text-xl text-base hover:opacity-50">
+                        <Link to="founders" smooth={true} offset={-40}>founders</Link>
+                    </Scrollspy>
+                </div>
             </div>
             <p class="invisible">filler</p>
             <p class="invisible">filler</p>

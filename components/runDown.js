@@ -2,7 +2,7 @@
 export default function RunDown() {
     return (
       <div class="mt-36 2xl:mt-80">
-        <div name="runDown" class="space-y-4">
+        <div id="runDown" name="runDown" class="space-y-4">
           <h1 class="text-4xl 2xl:pb-1">run-down</h1>
           <div class="border-b border-black"></div>
         </div>
