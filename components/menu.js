@@ -26,6 +26,7 @@ export default function Menu() {
             </div>
             <p class="invisible">filler</p>
             <p class="invisible">filler</p>
+            <a class="cursor-pointer 2xl:text-xl text-base hover:opacity-50 duration-200" href="" target="_blank">send us a message</a>
 
     </div>
 

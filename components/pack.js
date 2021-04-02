@@ -7,11 +7,11 @@ import four from "../public/four.json";
 
 export default function Pack() {
 
-    const [momentOne, setMomentOne] = useState('???\n\n');
-    const [momentTwo, setMomentTwo] = useState('???\n\n');
-    const [momentThree, setMomentThree] = useState('???\n\n');
-    const [momentFour, setMomentFour] = useState('???\n\n');
-    const [coolCat, setCoolCat] = useState('???\n\n');
+    const [momentOne, setMomentOne] = useState('\n\n\n\n\n\n???\n\n\n\n\n\n\n\n');
+    const [momentTwo, setMomentTwo] = useState('\n\n\n\n\n\n???\n\n\n\n\n\n\n\n');
+    const [momentThree, setMomentThree] = useState('\n\n\n\n\n\n???\n\n\n\n\n\n\n\n');
+    const [momentFour, setMomentFour] = useState('\n\n\n\n\n\n???\n\n\n\n\n\n\n\n');
+    const [coolCat, setCoolCat] = useState('\n\n\n\n\n\n???\n\n\n\n\n\n\n\n');
 
     const [disableMomentOne, setDisableMomentOne] = useState(false);
     const [disableMomentTwo, setDisableMomentTwo] = useState(false);
@@ -69,7 +69,7 @@ export default function Pack() {
         return <p key={Math.random()} class="animate__animated animate__flipInY underline">{b}<br/>{serial}</p>
     }
 
-    function getRandomCoolCat(){
+    function getRandomMomentAndSerial(){
         let key = getRandomArbitrary(1,5)
         let serial = getRandomArbitrary(1,15000)
         let cc = coolCats[key][0]
@@ -104,7 +104,7 @@ export default function Pack() {
                     {momentOne}
                 </button>
 
-                <button onClick={() => {setCoolCat(getRandomCoolCat()); setDisableCoolCat(true)}} disabled={disableCoolCat} 
+                <button onClick={() => {setCoolCat(getRandomMomentAndSerial()); setDisableCoolCat(true)}} disabled={disableCoolCat} 
                 class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black py-4 px-4 font-bold disabled:bg-blue-300 hover:bg-blue-300">
                     {coolCat}
                 </button>
