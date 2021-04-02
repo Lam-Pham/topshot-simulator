@@ -1,7 +1,8 @@
+import Arrow from './arrow'
 
 export default function RunDown() {
     return (
-      <div class="mt-36 2xl:mt-80">
+      <div class="mt-24 2xl:mt-80">
         <div id="runDown" name="runDown" class="space-y-4">
           <h1 class="text-4xl 2xl:pb-1">run-down</h1>
           <div class="border-b border-black"></div>
@@ -26,6 +27,9 @@ export default function RunDown() {
   
           <p class="col-span-1 ml-12 text-4xl leading-tight">According to the simulator, you have a <span class="underline text-purple-500">20.7%</span> chance of copping the Cool Cats 3 pack.<br/><br/>good luck!</p>
 
+        </div>
+        <div class="mt-52 mx-96 pl-6">
+          <Arrow target="drop"/>
         </div>
       </div>
     )

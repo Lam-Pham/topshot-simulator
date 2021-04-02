@@ -84,7 +84,7 @@ export default function Pack() {
     }
 
     return (
-      <div class="mt-80">
+      <div class="mt-24">
 
             <div id="pack" name="pack" class="space-y-4">
                 <h1 class="text-4xl 2xl:pb-1">pack</h1>

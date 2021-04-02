@@ -1,9 +1,8 @@
 import Image from 'next/image'
-import * as Scroll from 'react-scroll';
+import Arrow from './arrow'
 
 export default function Landing() {
 
-  let Link = Scroll.Link;
   return (
     <div>
       <div name="landing" class="space-y-6">
@@ -47,17 +46,8 @@ export default function Landing() {
               layout="intrinsic"
             />
         </div>
-        <div class="animate-bounce col-span-1 col-start-2 mx-20 mt-16 2xl:mt-48 cursor-pointer">
-          <Link to="runDown" smooth={true} offset={-40} class="">
-          <Image
-              src="/arrow.png"
-              alt="Down Arrow"
-              height={48}
-              width={48}
-              quality={100}
-              layout="intrinsic"
-            />
-            </Link>
+        <div class="col-span-1 col-start-2 mx-20 mt-16 2xl:mt-48">
+          <Arrow target="runDown"/>
         </div>
       </div>
 

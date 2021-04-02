@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Image from 'next/image'
+import Arrow from './arrow'
 
 export default function Drop() {
 
@@ -52,7 +53,7 @@ export default function Drop() {
     }
 
     return (
-      <div class="mt-96">
+      <div class="mt-24">
 
         <div id="drop" name="drop" class="space-y-4">
           <h1 class="text-4xl 2xl:pb-1">drop</h1>
@@ -88,10 +89,10 @@ export default function Drop() {
               layout="intrinsic"
             />
           </div>
-
-          <div class="col-span-1 ml-36">
-          </div>
   
+        </div>
+        <div class="mt-56 mx-96 pl-6">
+          <Arrow target="pack"/>
         </div>
       </div>
     )
