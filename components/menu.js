@@ -15,18 +15,19 @@ export default function Menu() {
                 <div class="border-b border-black"></div>
             </div>
             <div class="space-y-0">
-                <Link to="runDown" smooth={true} offset={-40} class="cursor-pointer 2xl:text-xl text-base hover:opacity-50 duration-200">run-down</Link>
+                <Link to="runDown" smooth={true} offset={-40} class="cursor-pointer 2xl:text-xl text-base hover:opacity-50">run-down</Link>
                 <br/>
-                <Link to="drop" smooth={true} offset={-40} class="cursor-pointer 2xl:text-xl text-base hover:opacity-50 duration-200">simulate drop</Link>
+                <Link to="drop" smooth={true} offset={-40} class="cursor-pointer 2xl:text-xl text-base hover:opacity-50">simulate drop</Link>
                 <br/>
-                <Link to="pack" smooth={true} offset={-40} class="cursor-pointer 2xl:text-xl text-base hover:opacity-50 duration-200">simulate pack</Link>
+                <Link to="pack" smooth={true} offset={-40} class="cursor-pointer 2xl:text-xl text-base hover:opacity-50">simulate pack</Link>
                 <br/>
-                <Link to="founders" smooth={true} offset={-40} class="cursor-pointer 2xl:text-xl text-base hover:opacity-50 duration-200">founders</Link>
+                <Link to="founders" smooth={true} offset={-40} class="cursor-pointer 2xl:text-xl text-base hover:opacity-50">founders</Link>
                 
             </div>
             <p class="invisible">filler</p>
             <p class="invisible">filler</p>
-            <a class="cursor-pointer 2xl:text-xl text-base hover:opacity-50 duration-200" href="" target="_blank">send us a message</a>
+            <p class="invisible">filler</p>
+            <a class="" href="mailto:topshotsimulator@gmail.com" target="_blank"><span class="cursor-pointer 2xl:text-xl text-base hover:opacity-50">send us a message </span>↗</a>
 
     </div>
 
