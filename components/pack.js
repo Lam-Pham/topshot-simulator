@@ -32,11 +32,9 @@ export default function Pack() {
         setDisableCoolCat(false);
     }
 
-    function getRandomArbitrary(min, max) {
-      return Math.round(Math.random() * (max - min) + min);
-    }
+    let getRandomArbitrary = (min, max) => Math.round(Math.random() * (max - min) + min);
 
-    function getRandomBaseSerial(){
+    let getRandomBaseSerial = () => {
         let number = getRandomArbitrary(1,1000)
         if (number < 954){
             return getRandomBaseThreeFive()
@@ -44,32 +42,31 @@ export default function Pack() {
             return getRandomBaseTwelve()
         }else {
             return getRandomBaseFour()
-        }
-        
+        }    
     }
 
-    function getRandomBaseFour(){
+    let getRandomBaseFour = () => {
         let key = getRandomArbitrary(1,4)
         let b = four[key][0]
         let serial = four[key][1]
         return <p key={Math.random()} class="animate__animated animate__flipInY">{b}<br/>{serial}</p>
     }
 
-    function getRandomBaseTwelve(){
+    let getRandomBaseTwelve = () => {
         let key = getRandomArbitrary(1,8)
         let b = twelve[key][0]
         let serial = twelve[key][1]
         return <p key={Math.random()} class="animate__animated animate__flipInY">{b}<br/>{serial}</p>
     }
 
-    function getRandomBaseThreeFive(){
+    let getRandomBaseThreeFive = () => {
         let key = getRandomArbitrary(1,38)
         let b = threeFive[key][0]
         let serial = threeFive[key][1]
         return <p key={Math.random()} class="animate__animated animate__flipInY underline">{b}<br/>{serial}</p>
     }
 
-    function getRandomMomentAndSerial(){
+    let getRandomMomentAndSerial = () => {
         let key = getRandomArbitrary(1,5)
         let serial = getRandomArbitrary(1,15000)
         let cc = coolCats[key][0]

@@ -31,17 +31,16 @@ export default function Drop() {
       "this is starting to get sad 🥱"
     ]
 
-    function getRandomArbitrary(min, max) {
-      return Math.round(Math.random() * (max - min) + min);
-    }
+    let getRandomArbitrary = (min, max) => Math.round(Math.random() * (max - min) + min);
+    
 
-    function getPlace() {
+    let getPlace = () => {
       let number = getRandomArbitrary(1,325000)
       getMessage(number)
       return <span key={Math.random()} class="animate__animated animate__fadeIn animate__slower font-bold">{number}</span>
     }
 
-    function getMessage(number) {
+    let getMessage = (number) => {
       let note = ""
       if(number > 67500){
         note = badMessages[getRandomArbitrary(0,8)]
