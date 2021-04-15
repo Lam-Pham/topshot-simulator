@@ -3,6 +3,7 @@ import coolCats from "../public/coolCats.json";
 import threeFive from "../public/threeFive.json";
 import twelve from "../public/twelve.json";
 import four from "../public/four.json";
+import Moment from './moment';
 
 
 export default function Pack() {
@@ -96,30 +97,25 @@ export default function Pack() {
             </div>
 
             <div class="grid grid-cols-3 gap-x-24 gap-y-16 mr-24">
-                <button onClick={() => {setMomentOne(getRandomBaseSerial()); setDisableMomentOne(true)}} disabled={disableMomentOne}
-                class="whitespace-pre-wrap col-span-1 col-start-1 border-2 border-b-4 focus:outline-none border-black py-16 px-8 font-bold disabled:bg-gray-300 hover:bg-gray-300">
-                    {momentOne}
-                </button>
+                <Moment handleClick={() => {setMomentOne(getRandomBaseSerial()); setDisableMomentOne(true)}} disabled={disableMomentOne}
+                class="whitespace-pre-wrap col-span-1 col-start-1 border-2 border-b-4 focus:outline-none border-black py-16 px-8 font-bold disabled:bg-gray-300 hover:bg-gray-300"
+                content={momentOne}/>
 
-                <button onClick={() => {setCoolCat(getRandomMomentAndSerial()); setDisableCoolCat(true)}} disabled={disableCoolCat} 
-                class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black py-4 px-4 font-bold disabled:bg-blue-300 hover:bg-blue-300">
-                    {coolCat}
-                </button>
+                <Moment handleClick={() => {setCoolCat(getRandomMomentAndSerial()); setDisableCoolCat(true)}} disabled={disableCoolCat} 
+                class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black py-4 px-4 font-bold disabled:bg-blue-300 hover:bg-blue-300"
+                content={coolCat}/>
 
-                <button onClick={() => {setMomentTwo(getRandomBaseSerial()); setDisableMomentTwo(true)}} disabled={disableMomentTwo}
-                class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black py-16 px-8 font-bold disabled:bg-gray-300 hover:bg-gray-300">
-                    {momentTwo}
-                </button>
-            
-                <button onClick={() => {setMomentThree(getRandomBaseSerial()); setDisableMomentThree(true)}} disabled={disableMomentThree}
-                class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black py-16 px-8 font-bold disabled:bg-gray-300 hover:bg-gray-300">
-                    {momentThree}
-                </button>
-
-                <button onClick={() => {setMomentFour(getRandomBaseSerial()); setDisableMomentFour(true)}} disabled={disableMomentFour}
-                class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black py-16 px-8 font-bold disabled:bg-gray-300 hover:bg-gray-300">
-                    {momentFour}
-                </button>
+                <Moment handleClick={() => {setMomentTwo(getRandomBaseSerial()); setDisableMomentTwo(true)}} disabled={disableMomentTwo}
+                class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black py-16 px-8 font-bold disabled:bg-gray-300 hover:bg-gray-300"
+                content={momentTwo}/>
+                
+                <Moment handleClick={() => {setMomentThree(getRandomBaseSerial()); setDisableMomentThree(true)}} disabled={disableMomentThree}
+                class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black py-16 px-8 font-bold disabled:bg-gray-300 hover:bg-gray-300"
+                content={momentThree}/>
+                
+                <Moment handleClick={() => {setMomentFour(getRandomBaseSerial()); setDisableMomentFour(true)}} disabled={disableMomentFour}
+                class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black py-16 px-8 font-bold disabled:bg-gray-300 hover:bg-gray-300"
+                content={momentFour}/>
             </div>
       </div>
     )
