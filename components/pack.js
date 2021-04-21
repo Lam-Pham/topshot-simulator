@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import coolCats from "../public/coolCats.json";
-import threeFive from "../public/threeFive.json";
-import twelve from "../public/twelve.json";
-import four from "../public/four.json";
+import coolcats3 from "../public/coolcats3.json";
 import Moment from './moment';
 
 
@@ -38,40 +35,30 @@ export default function Pack() {
     let getRandomBaseSerial = () => {
         let number = getRandomArbitrary(1,1000)
         if (number < 954){
-            return getRandomBaseThreeFive()
+            return getRandomBase(2,37)
         }else if (number < 993){
-            return getRandomBaseTwelve()
+            return getRandomBase(1,7)
         }else {
-            return getRandomBaseFour()
+            return getRandomBase(0,3)
         }    
     }
 
-    let getRandomBaseFour = () => {
-        let key = getRandomArbitrary(1,4)
-        let b = four[key][0]
-        let serial = four[key][1]
-        return <p key={Math.random()} class="animate__animated animate__flipInY">{b}<br/>{serial}</p>
-    }
-
-    let getRandomBaseTwelve = () => {
-        let key = getRandomArbitrary(1,8)
-        let b = twelve[key][0]
-        let serial = twelve[key][1]
-        return <p key={Math.random()} class="animate__animated animate__flipInY">{b}<br/>{serial}</p>
-    }
-
-    let getRandomBaseThreeFive = () => {
-        let key = getRandomArbitrary(1,38)
-        let b = threeFive[key][0]
-        let serial = threeFive[key][1]
-        return <p key={Math.random()} class="animate__animated animate__flipInY underline">{b}<br/>{serial}</p>
+    let getRandomBase = (type, max) => {
+        let key = getRandomArbitrary(0,max)
+        let b = coolcats3[type][key][0]
+        let serial = coolcats3[type][key][1]
+        let src = coolcats3[type][key][2]
+        return <div>
+            <p key={Math.random()} class="animate__animated animate__flipInY">{b}<br/>{serial}</p>
+            <video class="mt-4" loop="" autoplay="" playsinline="" preload="auto"><source src={src} type="video/mp4"></source></video>
+            </div>
     }
 
     let getRandomMomentAndSerial = () => {
-        let key = getRandomArbitrary(1,5)
+        let key = getRandomArbitrary(0,4)
         let serial = getRandomArbitrary(1,15000)
-        let cc = coolCats[key][0]
-        let src = coolCats[key][2]
+        let cc = coolcats3[3][key][0]
+        let src = coolcats3[3][key][2]
         if (cc == "Shai Gilgeous-Alexander"){
             cc = <span class="text-xs">{cc}</span>
         }
@@ -98,23 +85,23 @@ export default function Pack() {
 
             <div class="grid grid-cols-3 gap-x-24 gap-y-16 mr-24">
                 <Moment handleClick={() => {setMomentOne(getRandomBaseSerial()); setDisableMomentOne(true)}} disabled={disableMomentOne}
-                class="whitespace-pre-wrap col-span-1 col-start-1 border-2 border-b-4 focus:outline-none border-black py-16 px-8 font-bold disabled:bg-gray-300 hover:bg-gray-300"
+                class="whitespace-pre-wrap col-span-1 col-start-1 border-2 border-b-4 focus:outline-none border-black py-16 px-8 font-bold disabled:bg-gray-100 hover:bg-gray-100"
                 content={momentOne}/>
 
                 <Moment handleClick={() => {setCoolCat(getRandomMomentAndSerial()); setDisableCoolCat(true)}} disabled={disableCoolCat} 
-                class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black py-4 px-4 font-bold disabled:bg-blue-300 hover:bg-blue-300"
+                class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black py-4 px-4 font-bold disabled:bg-blue-100 hover:bg-blue-100"
                 content={coolCat}/>
 
                 <Moment handleClick={() => {setMomentTwo(getRandomBaseSerial()); setDisableMomentTwo(true)}} disabled={disableMomentTwo}
-                class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black py-16 px-8 font-bold disabled:bg-gray-300 hover:bg-gray-300"
+                class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black py-16 px-8 font-bold disabled:bg-gray-100 hover:bg-gray-100"
                 content={momentTwo}/>
                 
                 <Moment handleClick={() => {setMomentThree(getRandomBaseSerial()); setDisableMomentThree(true)}} disabled={disableMomentThree}
-                class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black py-16 px-8 font-bold disabled:bg-gray-300 hover:bg-gray-300"
+                class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black py-16 px-8 font-bold disabled:bg-gray-100 hover:bg-gray-100"
                 content={momentThree}/>
                 
                 <Moment handleClick={() => {setMomentFour(getRandomBaseSerial()); setDisableMomentFour(true)}} disabled={disableMomentFour}
-                class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black py-16 px-8 font-bold disabled:bg-gray-300 hover:bg-gray-300"
+                class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black py-16 px-8 font-bold disabled:bg-gray-100 hover:bg-gray-100"
                 content={momentFour}/>
             </div>
       </div>
