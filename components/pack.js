@@ -109,16 +109,17 @@ export default function Pack() {
                 <div class="border-b border-black"></div>
             </div>
            
-            <div class="mb-8 mt-24">
+            <div class="mb-8 mt-24 space-x-8">
                 <button onClick={() => resetPack()}
-                class="transform active:translate-y-1 duration-200 border-2 border-b-4 border-black focus:outline-none bg-white rounded-full py-2 px-8 font-bold bg-yellow-200 hover:bg-yellow-300">
+                class="inline transform active:translate-y-1 duration-200 border-2 border-b-4 border-black focus:outline-none bg-white rounded-full py-2 px-8 font-bold bg-yellow-200 hover:bg-yellow-300">
                     simulate pack
                 </button>
+                <p class="inline border-b-2 border-black">screenshot and share your simulated pack opening!</p>
             </div>
 
-            <div class="grid grid-cols-3 gap-x-12 gap-y-16 mr-24">
+            <div class="grid grid-cols-3 gap-x-12 gap-y-12 mr-24">
                 <Moment handleClick={() => {setMomentOne(getRandomBaseSerial()); setDisableMomentOne(true)}} disabled={disableMomentOne}
-                class="whitespace-pre-wrap col-span-1 col-start-1 border-2 border-b-4 focus:outline-none border-black py-16 px-4 font-bold disabled:bg-gray-100 hover:bg-gray-100"
+                class="whitespace-pre-wrap col-span-1 col-start-1 border-2 border-b-4 focus:outline-none border-black py-4 px-4 font-bold disabled:bg-gray-100 hover:bg-gray-100"
                 content={momentOne}/>
 
                 <Moment handleClick={() => {setSpecial(getMgle()); setDisableSpecial(true)}} disabled={disableSpecial} 
@@ -126,19 +127,19 @@ export default function Pack() {
                 content={special}/>
 
                 <Moment handleClick={() => {setMomentTwo(getRandomBaseSerial()); setDisableMomentTwo(true)}} disabled={disableMomentTwo}
-                class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black py-16 px-4 font-bold disabled:bg-gray-100 hover:bg-gray-100"
+                class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black py-4 px-4 font-bold disabled:bg-gray-100 hover:bg-gray-100"
                 content={momentTwo}/>
                 
                 <Moment handleClick={() => {setMomentThree(getRandomBaseSerial()); setDisableMomentThree(true)}} disabled={disableMomentThree}
-                class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black py-16 px-4 font-bold disabled:bg-gray-100 hover:bg-gray-100"
+                class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black py-4 px-4 font-bold disabled:bg-gray-100 hover:bg-gray-100"
                 content={momentThree}/>
                 
                 <Moment handleClick={() => {setMomentFour(getRandomBaseSerial()); setDisableMomentFour(true)}} disabled={disableMomentFour}
-                class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black py-16 px-4 font-bold disabled:bg-gray-100 hover:bg-gray-100"
+                class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black py-4 px-4 font-bold disabled:bg-gray-100 hover:bg-gray-100"
                 content={momentFour}/>
 
                 <Moment handleClick={() => {setMomentFive(getRandomBaseSerial()); setDisableMomentFive(true)}} disabled={disableMomentFive}
-                class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black py-16 px-4 font-bold disabled:bg-gray-100 hover:bg-gray-100"
+                class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black py-4 px-4 font-bold disabled:bg-gray-100 hover:bg-gray-100"
                 content={momentFive}/>
             </div>
       </div>
