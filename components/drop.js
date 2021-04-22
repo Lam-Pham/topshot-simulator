@@ -44,10 +44,10 @@ export default function Drop() {
     let getMessage = (number) => {
       let note = ""
       if(number > 17428){
-        note = badMessages[getRandomArbitrary(0,8)]
+        note = badMessages[getRandomArbitrary(0,10)]
       }
       else{
-        note = goodMessages[getRandomArbitrary(0,8)]
+        note = goodMessages[getRandomArbitrary(0,7)]
       }
       setMessage(<span key={Math.random()} class="animate__animated animate__fadeIn animate__slower">{note}</span>)
     }
