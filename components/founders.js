@@ -9,7 +9,7 @@ export default function Founders() {
           <div class="border-b border-black"></div>
         </div>
         
-        <div class="grid grid-cols-3 gap-x-24 gap-y-16 mt-24">
+        <div class="grid grid-cols-3 gap-x-16 gap-y-16 mt-24">
                 <p class="col-span-1 text-sm border-2 border-b-4 border-black py-8 px-8 bg-yellow-200">
                   <a href="nbatopshot.com" target="_blank" class="font-bold hover:underline">Lam</a><br/><br/>
                     <span class="font-bold">favorite TS memory</span><br/>
@@ -17,14 +17,31 @@ export default function Founders() {
                     <span class="font-bold">"i'm very unemployed"</span>
                 </p>
 
-                <p class="col-span-1 text-sm border-2 border-b-4 border-black py-8 px-8 bg-red-200">
+                <p class="col-span-1 text-sm border-2 border-b-4 border-black py-8 px-8 bg-green-100">
+                  
+                  <a href="nbatopshot.com" target="_blank" class="font-bold hover:underline">Isaiah K. ♥ <span class="text-xs font-normal">domain provider</span></a><br/><br/>
+                    <span class="font-bold">favorite TS moment</span><br/>
+                    my first Tyler Herro<br/><br/>
+                    <span class="font-bold">"i'm nice at spicy uno"</span>
+
+                </p>
+
+                <p class="col-span-1 text-sm border-2 border-b-4 border-black py-8 pl-8 bg-blue-200">
+                  
+                  <a href="nbatopshot.com" target="_blank" class="font-bold hover:underline">Slippery_scoops13</a><br/><br/>
+                    <span class="font-bold">favorite TS moment</span><br/>
+                    S1 Lonzo full-court dime<br/><br/>
+                    <span class="font-bold text-sm">"i am more than my account value"</span>
+                </p>
+
+                <p class="col-span-1 text-sm border-2 border-b-4 border-black py-8 px-8 bg-pink-200">
                   <a href="nbatopshot.com" target="_blank" class="font-bold hover:underline">Khai</a><br/><br/>
                     <span class="font-bold">tragic TS memory</span><br/>
                     not selling my Luka SS :(<br/><br/>
                     <span class="font-bold">"sHeeee"</span>
                 </p>
 
-                <p class="col-span-1 text-sm border-2 border-b-4 border-black py-8 px-8 bg-blue-200">
+                <p class="col-span-1 text-sm border-2 border-b-4 border-black py-8 px-8 bg-purple-200">
                   
                   <a href="nbatopshot.com" target="_blank" class="font-bold hover:underline">ChoMama</a><br/><br/>
                     <span class="font-bold">favorite TS moment</span><br/>
@@ -33,15 +50,7 @@ export default function Founders() {
 
                 </p>
 
-                <p class="col-span-1 text-sm border-2 border-b-4 border-black py-8 pl-8 bg-green-100">
-                  
-                  <a href="nbatopshot.com" target="_blank" class="font-bold hover:underline">Slippery_scoops13</a><br/><br/>
-                    <span class="font-bold">favorite TS moment</span><br/>
-                    S1 Lonzo full-court dime<br/><br/>
-                    <span class="font-bold text-xs">"i am more than my account value"</span>
-                </p>
-
-                <p class="col-span-1 text-sm border-2 border-b-4 border-black py-8 px-8 bg-purple-200">
+                <p class="col-span-1 text-sm border-2 border-b-4 border-black py-8 px-8 bg-red-200">
                   
                   <a href="nbatopshot.com" target="_blank" class="font-bold hover:underline">Trungy</a><br/><br/>
                     <span class="font-bold">favorite TS memory</span><br/>
@@ -50,12 +59,12 @@ export default function Founders() {
 
                 </p>
 
-                <p class="col-span-1 text-sm border-2 border-b-4 border-black py-8 px-8 bg-pink-200">
+                <p class="col-span-1 text-sm border-2 border-b-4 border-black py-8 px-8 bg-red-200">
                   
                   <a href="nbatopshot.com" target="_blank" class="font-bold hover:underline">Topshot King</a><br/><br/>
                     <span class="font-bold">favorite TS moment</span><br/>
                     Lebron tribute dunk<br/><br/>
-                    <span class="font-bold">"hodl for years, you won’t be disappointed 💎 🙌 "</span>
+                    <span class="font-bold">"hodl for years 💎 &nbsp;🙌 &nbsp;"</span>
 
                 </p>
 
@@ -70,8 +79,8 @@ export default function Founders() {
 
         </div>
         <div class="space-x-4 mt-20 2xl:mt-16 mx-52 2xl:mx-72">
-          <Link href="/thankshomie"><button class="inline-block col-start-2 col-span-1 transform active:translate-y-1 duration-200 2xl:mt-0 -mt-12 border-2 border-b-4 border-black focus:outline-none bg-white rounded-full py-2 px-8 font-bold hover:bg-red-400 bg-red-300 text-sm">donate to become a founder!</button></Link>
-          <Link href="/helpwanted"><button class="mb-72 inline-block col-start-2 col-span-1 2xl:mb-56 mb-20 transform active:translate-y-1 duration-200 -mt-12 border-2 border-b-4 border-black focus:outline-none bg-white rounded-full py-2 px-8 font-bold hover:bg-yellow-300 bg-yellow-200 text-sm">...or contribute to become one!</button></Link>
+          <Link href="/thankshomie"><button class="inline-block col-start-2 col-span-1 transform active:translate-y-1 duration-200 2xl:mt-0 -mt-12 border-2 border-b-4 border-black focus:outline-none bg-white rounded-full py-2 px-8 font-bold hover:bg-gray-200 text-sm">donate to become a founder!</button></Link>
+          <Link href="/helpwanted"><button class="mb-72 inline-block col-start-2 col-span-1 2xl:mb-56 mb-20 transform active:translate-y-1 duration-200 -mt-12 border-2 border-b-4 border-black focus:outline-none bg-white rounded-full py-2 px-8 font-bold hover:bg-gray-200 text-sm">...or contribute to become one!</button></Link>
         </div>
       </div>
     )
