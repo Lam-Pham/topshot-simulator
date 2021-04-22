@@ -6,12 +6,12 @@ import Moment from './moment';
 
 export default function Pack() {
 
-    const [momentOne, setMomentOne] = useState('\n\n\n\n\n\n???\n\n\n\n\n\n');
-    const [momentTwo, setMomentTwo] = useState('\n\n\n\n\n\n???\n\n\n\n\n\n');
-    const [momentThree, setMomentThree] = useState('\n\n\n\n\n\n???\n\n\n\n\n\n');
-    const [momentFour, setMomentFour] = useState('\n\n\n\n\n\n???\n\n\n\n\n\n');
-    const [momentFive, setMomentFive] = useState('\n\n\n\n\n\n???\n\n\n\n\n\n');
-    const [special, setSpecial] = useState('\n\n\n\n\n\n???\n\n\n\n\n\n');
+    const [momentOne, setMomentOne] = useState('\n\n\n\n\n\n???\n\n\n\n\n\n\n');
+    const [momentTwo, setMomentTwo] = useState('\n\n\n\n\n\n???\n\n\n\n\n\n\n');
+    const [momentThree, setMomentThree] = useState('\n\n\n\n\n\n???\n\n\n\n\n\n\n');
+    const [momentFour, setMomentFour] = useState('\n\n\n\n\n\n???\n\n\n\n\n\n\n');
+    const [momentFive, setMomentFive] = useState('\n\n\n\n\n\n???\n\n\n\n\n\n\n');
+    const [special, setSpecial] = useState('\n\n\n\n\n\n???\n\n\n\n\n\n\n');
 
     const [disableMomentOne, setDisableMomentOne] = useState(false);
     const [disableMomentTwo, setDisableMomentTwo] = useState(false);
@@ -21,12 +21,12 @@ export default function Pack() {
     const [disableSpecial, setDisableSpecial] = useState(false);
 
     const resetPack = () => {
-        setMomentOne(<p key={Math.random()} class="animate__animated animate__flipInY"><br/><br/><br/><br/><br/><br/>???<br/><br/><br/><br/><br/><br/></p>);
-        setMomentTwo(<p key={Math.random()} class="animate__animated animate__flipInY"><br/><br/><br/><br/><br/><br/>???<br/><br/><br/><br/><br/><br/></p>);
-        setMomentThree(<p key={Math.random()} class="animate__animated animate__flipInY"><br/><br/><br/><br/><br/><br/>???<br/><br/><br/><br/><br/><br/></p>);
-        setMomentFour(<p key={Math.random()} class="animate__animated animate__flipInY"><br/><br/><br/><br/><br/><br/>???<br/><br/><br/><br/><br/><br/></p>);
-        setMomentFive(<p key={Math.random()} class="animate__animated animate__flipInY"><br/><br/><br/><br/><br/><br/>???<br/><br/><br/><br/><br/><br/></p>);
-        setSpecial(<p key={Math.random()} class="animate__animated animate__flipInY"><br/><br/><br/><br/><br/><br/>???<br/><br/><br/><br/><br/><br/></p>);
+        setMomentOne(<p key={Math.random()} class="animate__animated animate__flipInY"><br/><br/><br/><br/><br/><br/>???<br/><br/><br/><br/><br/><br/><br/></p>);
+        setMomentTwo(<p key={Math.random()} class="animate__animated animate__flipInY"><br/><br/><br/><br/><br/><br/>???<br/><br/><br/><br/><br/><br/><br/></p>);
+        setMomentThree(<p key={Math.random()} class="animate__animated animate__flipInY"><br/><br/><br/><br/><br/><br/>???<br/><br/><br/><br/><br/><br/><br/></p>);
+        setMomentFour(<p key={Math.random()} class="animate__animated animate__flipInY"><br/><br/><br/><br/><br/><br/>???<br/><br/><br/><br/><br/><br/><br/></p>);
+        setMomentFive(<p key={Math.random()} class="animate__animated animate__flipInY"><br/><br/><br/><br/><br/><br/>???<br/><br/><br/><br/><br/><br/><br/></p>);
+        setSpecial(<p key={Math.random()} class="animate__animated animate__flipInY"><br/><br/><br/><br/><br/><br/>???<br/><br/><br/><br/><br/><br/><br/></p>);
         setDisableMomentOne(false);
         setDisableMomentTwo(false);
         setDisableMomentThree(false);
@@ -87,7 +87,7 @@ export default function Pack() {
         let key = getRandomArbitrary(0,26)
         let serial = getRandomArbitrary(1,499)
         if (both == false){
-            serial = '???'
+            serial = '??'
         }
         let name = mgle_rare[type][key][0]
         let src = mgle_rare[type][key][2]
@@ -96,8 +96,8 @@ export default function Pack() {
             name = <span class="text-xs">{name}</span>
         }
         return <div>
-                <p key={Math.random()} class="animate__animated animate__flipInY">{name}<br/>#{serial}/499</p>
-                <video class="mt-5" loop="" autoplay="" playsinline="" preload="auto"><source src={src} type="video/mp4"></source></video>
+                <p key={Math.random()} class="animate__animated animate__flipInY">{name}<br/># {serial} /499</p>
+                <video class="mt-4" loop="" autoplay="" playsinline="" preload="auto"><source src={src} type="video/mp4"></source></video>
                 </div> 
     }
 
@@ -116,9 +116,9 @@ export default function Pack() {
                 </button>
             </div>
 
-            <div class="grid grid-cols-3 gap-x-24 gap-y-16 mr-24">
+            <div class="grid grid-cols-3 gap-x-12 gap-y-16 mr-24">
                 <Moment handleClick={() => {setMomentOne(getRandomBaseSerial()); setDisableMomentOne(true)}} disabled={disableMomentOne}
-                class="whitespace-pre-wrap col-span-1 col-start-1 border-2 border-b-4 focus:outline-none border-black py-16 px-8 font-bold disabled:bg-gray-100 hover:bg-gray-100"
+                class="whitespace-pre-wrap col-span-1 col-start-1 border-2 border-b-4 focus:outline-none border-black py-16 px-4 font-bold disabled:bg-gray-100 hover:bg-gray-100"
                 content={momentOne}/>
 
                 <Moment handleClick={() => {setSpecial(getMgle()); setDisableSpecial(true)}} disabled={disableSpecial} 
@@ -126,19 +126,19 @@ export default function Pack() {
                 content={special}/>
 
                 <Moment handleClick={() => {setMomentTwo(getRandomBaseSerial()); setDisableMomentTwo(true)}} disabled={disableMomentTwo}
-                class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black py-16 px-8 font-bold disabled:bg-gray-100 hover:bg-gray-100"
+                class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black py-16 px-4 font-bold disabled:bg-gray-100 hover:bg-gray-100"
                 content={momentTwo}/>
                 
                 <Moment handleClick={() => {setMomentThree(getRandomBaseSerial()); setDisableMomentThree(true)}} disabled={disableMomentThree}
-                class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black py-16 px-8 font-bold disabled:bg-gray-100 hover:bg-gray-100"
+                class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black py-16 px-4 font-bold disabled:bg-gray-100 hover:bg-gray-100"
                 content={momentThree}/>
                 
                 <Moment handleClick={() => {setMomentFour(getRandomBaseSerial()); setDisableMomentFour(true)}} disabled={disableMomentFour}
-                class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black py-16 px-8 font-bold disabled:bg-gray-100 hover:bg-gray-100"
+                class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black py-16 px-4 font-bold disabled:bg-gray-100 hover:bg-gray-100"
                 content={momentFour}/>
 
                 <Moment handleClick={() => {setMomentFive(getRandomBaseSerial()); setDisableMomentFive(true)}} disabled={disableMomentFive}
-                class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black py-16 px-8 font-bold disabled:bg-gray-100 hover:bg-gray-100"
+                class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black py-16 px-4 font-bold disabled:bg-gray-100 hover:bg-gray-100"
                 content={momentFive}/>
             </div>
       </div>
