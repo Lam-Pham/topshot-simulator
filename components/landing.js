@@ -12,7 +12,7 @@ export default function Landing() {
       <div class="mt-24">
         <p class="2xl:text-6xl text-5xl">Simulate NBA Top Shot <span class="border-b-4 border-red-500">drops</span>  +  <span class="border-b-4 border-blue-500">packs</span> !</p>
         <br/>
-        <p class="text-3xl">featured pack: <span class="border-b-4 border-purple-500">Cool Cats 3</span></p>
+        <p class="text-3xl">featured pack: <span class="border-b-4 border-yellow-500">Premium Pack</span></p>
       </div>
 
       <div class="grid grid-cols-3 mt-36">
