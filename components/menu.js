@@ -43,7 +43,7 @@ export default function Menu() {
             <p class="hidden 2xl:block invisible">filler</p>
             <a class="" href="https://forms.gle/t8BNU1QNqXvwtEse9" target="_blank"><span class="cursor-pointer 2xl:text-xl text-base hover:opacity-50">send us a message </span>↗</a>
             <br/>
-            <a class="" href="https://forms.gle/BSkMSRNQKHDv7qcC8" target="_blank"><span class="cursor-pointer 2xl:text-xl text-base hover:opacity-50">keep me in the loop</span>↗</a>
+            <a class="" href="https://forms.gle/BSkMSRNQKHDv7qcC8" target="_blank"><span class="cursor-pointer 2xl:text-xl text-base hover:opacity-50">get pack notifications </span>↗</a>
 
     </div>
 
