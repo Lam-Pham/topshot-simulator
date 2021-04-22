@@ -79,7 +79,7 @@ export default function Pack() {
         if (number > 72){
             return getRandomMomentAndSerial(true, 0)
         }else{
-            return getRandomMomentAndSerial(false, 1)
+            return getRandomMomentAndSerial(true, 1)
         }
     }
 
@@ -96,7 +96,7 @@ export default function Pack() {
             name = <span class="text-xs">{name}</span>
         }
         return <div>
-                <p key={Math.random()} class="animate__animated animate__flipInY">{name}<br/># {serial} /499</p>
+                <p key={Math.random()} class="animate__animated animate__flipInY">{name}<br/># {serial}/499</p>
                 <video class="mt-4" loop="" autoplay="" playsinline="" preload="auto"><source src={src} type="video/mp4"></source></video>
                 </div> 
     }

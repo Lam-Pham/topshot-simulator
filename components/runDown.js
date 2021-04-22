@@ -19,7 +19,7 @@ export default function RunDown() {
               <p class="col-span-2">total available:</p>
               <p class="col-span-2">17,427</p>
               <p class="col-span-2">expected demand:</p>
-              <p class="col-span-2">100,000</p>
+              <p class="col-span-2">70,000</p>
               <br/>
               <p class="col-span-4"><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSA1jjjiBPa31vK2s6RzXvH1ab95ap2oYqEELcnxIABSM-RvRDDYGLVz478WE2eYGXI163oHnh_4ngm/pubhtml?gid=537560723" class="border-b-2 border-yellow-400 hover:border-yellow-800" target="blank">list of all moments inside</a></p>
             </div>

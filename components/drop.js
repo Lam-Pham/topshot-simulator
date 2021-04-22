@@ -36,7 +36,7 @@ export default function Drop() {
     
 
     let getPlace = () => {
-      let number = getRandomArbitrary(1,100000)
+      let number = getRandomArbitrary(1,70000)
       getMessage(number)
       return <span key={Math.random()} class="animate__animated animate__fadeIn animate__slower font-bold">{number}</span>
     }
