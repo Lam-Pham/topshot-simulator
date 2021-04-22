@@ -19,7 +19,7 @@ export default function Founders() {
 
                 <p class="col-span-1 text-sm border-2 border-b-4 border-black py-8 px-8 hover:bg-red-300">
                   <a href="nbatopshot.com" target="_blank" class="font-bold hover:underline">Khai</a><br/><br/>
-                    <span class="font-bold">favorite TS memory</span><br/>
+                    <span class="font-bold">tragic TS memory</span><br/>
                     not selling my Luka SS :(<br/><br/>
                     <span class="font-bold">"sHeeee"</span>
                 </p>
@@ -30,6 +30,23 @@ export default function Founders() {
                     <span class="font-bold">favorite TS moment</span><br/>
                     Lebron no-look 3<br/><br/>
                     <span class="font-bold">"shout out OlympusDao"</span>
+
+                </p>
+
+                <p class="col-span-1 text-sm border-2 border-b-4 border-black py-8 pl-8 hover:bg-green-100">
+                  
+                  <a href="nbatopshot.com" target="_blank" class="font-bold hover:underline">Slippery_scoops13</a><br/><br/>
+                    <span class="font-bold">favorite TS moment</span><br/>
+                    S1 Lonzo full-court dime<br/><br/>
+                    <span class="font-bold text-xs">"i am more than my account value"</span>
+                </p>
+
+                <p class="col-span-1 text-sm border-2 border-b-4 border-black py-8 px-8 hover:bg-purple-300">
+                  
+                  <a href="nbatopshot.com" target="_blank" class="font-bold hover:underline">Trungy</a><br/><br/>
+                    <span class="font-bold">favorite TS memory</span><br/>
+                    selling Julius Randle<br/><br/>
+                    <span class="font-bold">"145 lmao"</span>
 
                 </p>
 
