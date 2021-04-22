@@ -34,9 +34,9 @@ export default function Founders() {
                 </p>
 
         </div>
-        <div class="space-x-4 mt-9 2xl:mt-16 mx-52 2xl:mx-72">
+        <div class="space-x-4 mt-20 2xl:mt-16 mx-52 2xl:mx-72">
           <Link href="/thankshomie"><button class="inline-block col-start-2 col-span-1 transform active:translate-y-1 duration-200 2xl:mt-0 -mt-12 border-2 border-b-4 border-black focus:outline-none bg-white rounded-full py-2 px-8 font-bold hover:bg-red-400 bg-red-300 text-sm">donate to become a founder!</button></Link>
-          <Link href="/helpwanted"><button class="inline-block col-start-2 col-span-1 2xl:mb-56 mb-20 transform active:translate-y-1 duration-200 -mt-12 border-2 border-b-4 border-black focus:outline-none bg-white rounded-full py-2 px-8 font-bold hover:bg-yellow-300 bg-yellow-200 text-sm">...or contribute to become one!</button></Link>
+          <Link href="/helpwanted"><button class="mb-72 inline-block col-start-2 col-span-1 2xl:mb-56 mb-20 transform active:translate-y-1 duration-200 -mt-12 border-2 border-b-4 border-black focus:outline-none bg-white rounded-full py-2 px-8 font-bold hover:bg-yellow-300 bg-yellow-200 text-sm">...or contribute to become one!</button></Link>
         </div>
       </div>
     )
