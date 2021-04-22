@@ -25,7 +25,7 @@ export default function RunDown() {
             </div>
           </div>
   
-          <p class="col-span-1 ml-12 text-4xl leading-tight">According to the simulator, you have a <span class="underline text-yellow-500">17.4%</span> chance of copping the Premium Pack.<br/><br/>good luck!</p>
+          <p class="col-span-1 ml-12 text-4xl leading-tight">According to the simulator, you have a <span class="underline text-yellow-500">26.8%</span> chance of copping the Premium Pack.<br/><br/>good luck!</p>
 
         </div>
         <div class="mt-52 mx-96 pl-6">
