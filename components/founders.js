@@ -86,6 +86,15 @@ export default function Founders() {
 
                 </p>
 
+                <p class="col-span-1 text-sm border-2 border-b-4 border-black py-8 px-8 bg-red-200">
+                  
+                  <a href="nbatopshot.com" target="_blank" class="font-bold hover:underline">Kristee</a><br/><br/>
+                    <span class="font-bold">favorite TS moment</span><br/>
+                    Cody Zeller dunk<br/><br/>
+                    <span class="font-bold">"<a class="underline cursor-pointer" href="https://nbatopshot.com/showcases/3ab661ad-9755-4050-ba45-d422163601d6" target="_blank">cody zeller one hunny</a>"</span>
+
+                </p>
+
         </div>
         <div class="space-x-4 mt-20 2xl:mt-16 mx-52 2xl:mx-72">
           <Link href="/thankshomie"><button class="inline-block col-start-2 col-span-1 transform active:translate-y-1 duration-200 2xl:mt-0 -mt-12 border-2 border-b-4 border-black focus:outline-none bg-white rounded-full py-2 px-8 font-bold hover:bg-gray-200 text-sm">donate to become a founder!</button></Link>
