@@ -1,6 +1,6 @@
 [
     {"id":"1", "username": "Lam", "type": "memory", "info": "selling Gobert his own card",
-     "message": "I'm very unemployed", "color": "bg-green-100"},
+     "message": "I'm very unemployed", "color": "bg-yellow-200"},
 
     {"id":"2", "username": "Isaiah K. ♥ domain provider", "type": "moment", "info": "my first Tyler Herro",
      "message": "i'm nice at spicy uno", "color": "bg-green-100"},
