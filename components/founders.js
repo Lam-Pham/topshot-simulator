@@ -94,7 +94,7 @@ export default function Founders() {
                   <a href="nbatopshot.com" target="_blank" class="font-bold hover:underline">Kristee</a><br/><br/>
                     <span class="font-bold">favorite TS moment</span><br/>
                     Cody Zeller dunk<br/><br/>
-                    <span class="font-bold"><a href="https://nbatopshot.com/user/@kdogemon/showcases" target="_blank" class="underline">cody zeller one hunny</a>"</span>
+                    <span class="font-bold">"<a href="https://nbatopshot.com/user/@kdogemon/showcases" target="_blank" class="underline">cody zeller one hunny</a>"</span>
 
                 </p>
 
