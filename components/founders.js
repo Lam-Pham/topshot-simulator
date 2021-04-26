@@ -4,8 +4,6 @@ import founders from "../public/founders.json";
 
 export default function Founders() {
 
-
-
     return (
       <div class="mt-32">
 
@@ -15,7 +13,7 @@ export default function Founders() {
         </div>
         
         <div class="grid grid-cols-3 gap-x-16 gap-y-16 mt-24">
-          {founders.map(founder => <Person username={founder.username} type={founder.type} info={founder.info} message={founder.message} color={founder.color}/>)}
+          {founders.map(founder => <Person id={founder.id} username={founder.username} type={founder.type} info={founder.info} message={founder.message} color={founder.color}/>)}
         </div>
         <div class="space-x-4 mt-20 2xl:mt-16 mx-52 2xl:mx-72">
           <Link href="/thankshomie"><button class="inline-block col-start-2 col-span-1 transform active:translate-y-1 duration-200 2xl:mt-0 -mt-12 border-2 border-b-4 border-black focus:outline-none bg-white rounded-full py-2 px-8 font-bold hover:bg-gray-200 text-sm">donate to become a founder!</button></Link>
