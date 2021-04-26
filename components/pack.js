@@ -111,7 +111,7 @@ export default function Pack() {
            
             <div class="mb-8 mt-24 space-x-8">
                 <button onClick={() => resetPack()}
-                class="inline transform active:translate-y-1 duration-200 border-2 border-b-4 border-black focus:outline-none bg-white rounded-full py-2 px-8 font-bold bg-yellow-200 hover:bg-yellow-300">
+                class="inline transform active:translate-y-1 duration-200 border-2 border-b-4 border-black focus:outline-none rounded-full py-2 px-8 font-bold bg-yellow-200 hover:bg-yellow-300">
                     simulate pack
                 </button>
                 <p class="inline border-b-2 border-black">screenshot and share your simulated pack opening!</p>
