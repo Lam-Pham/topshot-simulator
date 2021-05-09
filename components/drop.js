@@ -36,14 +36,14 @@ export default function Drop() {
     
 
     let getPlace = () => {
-      let number = getRandomArbitrary(1,65000)
+      let number = getRandomArbitrary(1,150000)
       getMessage(number)
       return <span key={Math.random()} class="animate__animated animate__fadeIn animate__slower font-bold">{number}</span>
     }
 
     let getMessage = (number) => {
       let note = ""
-      if(number > 17428){
+      if(number > 76000){
         note = badMessages[getRandomArbitrary(0,10)]
       }
       else{
@@ -64,7 +64,7 @@ export default function Drop() {
 
           <div class="col-start-1 col-span-1 mb-4">
             <button onClick={() => {setPlace(getPlace())}}
-            class="transform active:translate-y-1 duration-200 border-2 border-b-4 border-black focus:outline-none rounded-full py-2 px-8 font-bold bg-yellow-200 hover:bg-yellow-300">
+            class="transform active:translate-y-1 duration-200 border-2 border-b-4 border-black focus:outline-none rounded-full py-2 px-8 font-bold bg-red-300 hover:bg-red-400">
               simulate drop
             </button>
           </div>
@@ -81,8 +81,8 @@ export default function Drop() {
     
           <div class="col-span-1 ml-36 animate__animated hover:animate__headShake">
           <Image
-              src="/mgle.png"
-              alt="Premium Pack"
+              src="/throwdowns.png"
+              alt="Throwdowns Pack"
               height={196}
               width={196}
               quality={100}

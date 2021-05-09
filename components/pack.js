@@ -6,12 +6,12 @@ import Moment from './moment';
 
 export default function Pack() {
 
-    const [momentOne, setMomentOne] = useState('\n\n\n\n\n\n???\n\n\n\n\n\n\n');
-    const [momentTwo, setMomentTwo] = useState('\n\n\n\n\n\n???\n\n\n\n\n\n\n');
-    const [momentThree, setMomentThree] = useState('\n\n\n\n\n\n???\n\n\n\n\n\n\n');
-    const [momentFour, setMomentFour] = useState('\n\n\n\n\n\n???\n\n\n\n\n\n\n');
-    const [momentFive, setMomentFive] = useState('\n\n\n\n\n\n???\n\n\n\n\n\n\n');
-    const [special, setSpecial] = useState('\n\n\n\n\n\n???\n\n\n\n\n\n\n');
+    const [momentOne, setMomentOne] = useState('\n\n\n\n\n???\n\n\n\n\n\n\n');
+    const [momentTwo, setMomentTwo] = useState('\n\n\n\n\n???\n\n\n\n\n\n\n');
+    const [momentThree, setMomentThree] = useState('\n\n\n\n\n???\n\n\n\n\n\n\n');
+    const [momentFour, setMomentFour] = useState('\n\n\n\n\n???\n\n\n\n\n\n\n');
+    const [momentFive, setMomentFive] = useState('\n\n\n\n\n???\n\n\n\n\n\n\n');
+    const [special, setSpecial] = useState('\n\n\n\n\n???\n\n\n\n\n\n\n');
 
     const [disableMomentOne, setDisableMomentOne] = useState(false);
     const [disableMomentTwo, setDisableMomentTwo] = useState(false);
@@ -21,12 +21,12 @@ export default function Pack() {
     const [disableSpecial, setDisableSpecial] = useState(false);
 
     const resetPack = () => {
-        setMomentOne(<p key={Math.random()} class="animate__animated animate__flipInY"><br/><br/><br/><br/><br/><br/>???<br/><br/><br/><br/><br/><br/><br/></p>);
-        setMomentTwo(<p key={Math.random()} class="animate__animated animate__flipInY"><br/><br/><br/><br/><br/><br/>???<br/><br/><br/><br/><br/><br/><br/></p>);
-        setMomentThree(<p key={Math.random()} class="animate__animated animate__flipInY"><br/><br/><br/><br/><br/><br/>???<br/><br/><br/><br/><br/><br/><br/></p>);
-        setMomentFour(<p key={Math.random()} class="animate__animated animate__flipInY"><br/><br/><br/><br/><br/><br/>???<br/><br/><br/><br/><br/><br/><br/></p>);
-        setMomentFive(<p key={Math.random()} class="animate__animated animate__flipInY"><br/><br/><br/><br/><br/><br/>???<br/><br/><br/><br/><br/><br/><br/></p>);
-        setSpecial(<p key={Math.random()} class="animate__animated animate__flipInY"><br/><br/><br/><br/><br/><br/>???<br/><br/><br/><br/><br/><br/><br/></p>);
+        setMomentOne(<p key={Math.random()} class="animate__animated animate__flipInY"><br/><br/><br/><br/><br/>???<br/><br/><br/><br/><br/><br/><br/></p>);
+        setMomentTwo(<p key={Math.random()} class="animate__animated animate__flipInY"><br/><br/><br/><br/><br/>???<br/><br/><br/><br/><br/><br/><br/></p>);
+        setMomentThree(<p key={Math.random()} class="animate__animated animate__flipInY"><br/><br/><br/><br/><br/>???<br/><br/><br/><br/><br/><br/><br/></p>);
+        setMomentFour(<p key={Math.random()} class="animate__animated animate__flipInY"><br/><br/><br/><br/><br/>???<br/><br/><br/><br/><br/><br/><br/></p>);
+        setMomentFive(<p key={Math.random()} class="animate__animated animate__flipInY"><br/><br/><br/><br/><br/>???<br/><br/><br/><br/><br/><br/><br/></p>);
+        setSpecial(<p key={Math.random()} class="animate__animated animate__flipInY"><br/><br/><br/><br/><br/>???<br/><br/><br/><br/><br/><br/><br/></p>);
         setDisableMomentOne(false);
         setDisableMomentTwo(false);
         setDisableMomentThree(false);
@@ -111,10 +111,10 @@ export default function Pack() {
            
             <div class="mb-8 mt-24 space-x-8">
                 <button onClick={() => resetPack()}
-                class="inline transform active:translate-y-1 duration-200 border-2 border-b-4 border-black focus:outline-none rounded-full py-2 px-8 font-bold bg-yellow-200 hover:bg-yellow-300">
+                class="inline transform active:translate-y-1 duration-200 border-2 border-b-4 border-black focus:outline-none rounded-full py-2 px-8 font-bold bg-red-300 hover:bg-red-400">
                     simulate pack
                 </button>
-                <p class="inline border-b-2 border-black">screenshot and share your simulated pack opening!</p>
+                <p class="inline border-b-2 border-black">screenshot and share your pack!</p>
             </div>
 
             <div class="grid grid-cols-3 gap-x-12 gap-y-12 mr-24">
@@ -123,7 +123,7 @@ export default function Pack() {
                 content={momentOne}/>
 
                 <Moment handleClick={() => {setSpecial(getMgle()); setDisableSpecial(true)}} disabled={disableSpecial} 
-                class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black py-4 px-4 font-bold disabled:bg-yellow-100 hover:bg-yellow-200"
+                class="whitespace-pre-wrap col-span-1 border-2 border-b-4 focus:outline-none border-black py-4 px-4 font-bold disabled:bg-red-200 hover:bg-red-300"
                 content={special}/>
 
                 <Moment handleClick={() => {setMomentTwo(getRandomBaseSerial()); setDisableMomentTwo(true)}} disabled={disableMomentTwo}
