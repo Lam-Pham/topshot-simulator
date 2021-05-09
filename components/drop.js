@@ -64,7 +64,7 @@ export default function Drop() {
 
           <div class="col-start-1 col-span-1 mb-4">
             <button onClick={() => {setPlace(getPlace())}}
-            class="transform active:translate-y-1 duration-200 border-2 border-b-4 border-black focus:outline-none bg-white rounded-full py-2 px-8 font-bold bg-yellow-200 hover:bg-yellow-300">
+            class="transform active:translate-y-1 duration-200 border-2 border-b-4 border-black focus:outline-none rounded-full py-2 px-8 font-bold bg-yellow-200 hover:bg-yellow-300">
               simulate drop
             </button>
           </div>
