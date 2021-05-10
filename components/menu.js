@@ -22,17 +22,17 @@ export default function Menu() {
                     </Scrollspy>
                 </div>
                 <div class="cursor-pointer 2xl:text-2xl text-lg hover:opacity-50">
-                    <Scrollspy offset={400} componentTag="div" items={ ['drop'] }currentClassName="font-bold cursor-pointer 2xl:text-2xl text-lg hover:opacity-50">
-                        <Link to="drop" spy={true} smooth={true} offset={-40}>simulate drop</Link>
+                    <Scrollspy offset={200} componentTag="div" items={ ['drop'] }currentClassName="font-bold cursor-pointer 2xl:text-2xl text-lg hover:opacity-50">
+                        <Link to="drop" spy={true} smooth={true} offset={-40}>simulate drop 💥</Link>
                     </Scrollspy>
                 </div>
                 <div class="cursor-pointer 2xl:text-2xl text-lg hover:opacity-50">
-                    <Scrollspy offset={400} componentTag="div" items={ ['pack'] } currentClassName="font-bold cursor-pointer 2xl:text-2xl text-lg hover:opacity-50">
-                        <Link to="pack" smooth={true} offset={-40}>simulate pack</Link>
+                    <Scrollspy offset={200} componentTag="div" items={ ['pack'] } currentClassName="font-bold cursor-pointer 2xl:text-2xl text-lg hover:opacity-50">
+                        <Link to="pack" smooth={true} offset={-40}>simulate pack 🎉</Link>
                     </Scrollspy>
                 </div>
                 <div class="cursor-pointer 2xl:text-2xl text-lg hover:opacity-50">
-                    <Scrollspy offset={0} componentTag="div" items={ ['founders'] } currentClassName="font-bold cursor-pointer 2xl:text-2xl text-lg hover:opacity-50">
+                    <Scrollspy offset={200} componentTag="div" items={ ['founders'] } currentClassName="font-bold cursor-pointer 2xl:text-2xl text-lg hover:opacity-50">
                         <Link to="founders" smooth={true} offset={-40}>founders</Link>
                     </Scrollspy>
                 </div>
@@ -42,8 +42,6 @@ export default function Menu() {
             <p class="invisible">filler</p>
             <p class="hidden 2xl:block invisible">filler</p>
             <a class="" href="https://forms.gle/t8BNU1QNqXvwtEse9" target="_blank"><span class="cursor-pointer 2xl:text-xl text-base hover:opacity-50">send us a message </span>↗</a>
-            <br/>
-            <a class="" href="https://forms.gle/BSkMSRNQKHDv7qcC8" target="_blank"><span class="cursor-pointer 2xl:text-xl text-base hover:opacity-50">get pack notifications </span>↗</a>
 
     </div>
 

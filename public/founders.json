@@ -1,32 +1,32 @@
 [
     {"id":"1", "username": "Lam", "type": "memory", "info": "selling Gobert his own card",
-     "message": "I'm very unemployed", "color": "bg-yellow-200"},
+     "message": "I'm very unemployed", "style": "bg-yellow-200 col-span-1 text-sm border-2 border-b-4 border-black py-8 pl-8"},
 
     {"id":"2", "username": "Isaiah K. ♥ domain provider", "type": "moment", "info": "my first Tyler Herro",
-     "message": "i'm nice at spicy uno", "color": "bg-green-100"},
+     "message": "i'm nice at spicy uno", "style": "bg-green-100 col-span-1 text-sm border-2 border-b-4 border-black py-8 pl-8"},
 
     {"id":"3", "username": "Slippery_scoops13", "type": "moment", "info": "S1 Lonzo full-court dime",
-    "message": "i am more than my account value", "color": "bg-blue-200"},
+    "message": "i am more than my account value", "style": "bg-blue-200 col-span-1 text-sm border-2 border-b-4 border-black py-8 pl-8"},
 
     {"id":"4", "username": "BothTeamsPlayedHard", "type": "moment", "info": "Vince Carter S1 3",
-    "message": "G00DBURG3R RULES", "color": "bg-pink-200"},
+    "message": "G00DBURG3R RULES", "style": "bg-pink-200 col-span-1 text-sm border-2 border-b-4 border-black py-8 pl-8"},
         
     {"id":"5", "username": "Khai", "type": "memory", "info": "hodling my Luka SS :(",
-    "message": "do you suffer from asian glow", "color": "bg-purple-200"},
+    "message": "do you suffer from asian glow", "style": "bg-purple-200 col-span-1 text-sm border-2 border-b-4 border-black py-8 pl-8"},
 
     {"id":"6", "username": "ChoMama (3,3)", "type": "moment", "info": "Vucevic Seeing Star",
-    "message": "where my Ohmies at", "color": "bg-red-200"},
+    "message": "where my Ohmies at", "style": "bg-red-200 col-span-1 text-sm border-2 border-b-4 border-black py-8 pl-8"},
 
     {"id":"7", "username": "Trungy", "type": "memory", "info": "selling Julius Randle",
-    "message": "145 lmao", "color": "bg-blue-200"},
+    "message": "145 lmao", "style": "bg-blue-200 col-span-1 text-sm border-2 border-b-4 border-black py-8 pl-8"},
 
     {"id":"8", "username": "Topshot King", "type": "moment", "info": "S1 Lonzo full-court dime",
-    "message": "hodl for years 💎 🙌 ", "color": "bg-yellow-200"},
+    "message": "hodl for years 💎 🙌 ", "style": "bg-yellow-200 col-span-1 text-sm border-2 border-b-4 border-black py-8 pl-8"},
 
     {"id":"9", "username": "Kristee", "type": "moment", "info": "Cody Zeller dunk",
-    "message": "cody zeller one hunny", "color": "bg-green-100"},
+    "message": "cody zeller one hunny", "style": "bg-green-100 col-span-1 text-sm border-2 border-b-4 border-black py-8 pl-8"},
 
      {"id":"10", "username": "Thong", "type": "memory", "info": "pulling a Lebron no look 3",
-    "message": "sub to TrashKatz on YouTube", "color": "bg-red-200"}
+    "message": "sub to TrashKatz on YouTube", "style": "bg-purple-200 col-span-1 text-sm border-2 border-b-4 border-black py-8 pl-8"}
 
 ]
