@@ -8,26 +8,31 @@ export default function Drop() {
     const [message, setMessage] = useState('good luck!')
 
     let goodMessages = [
-      "you did it! 🔥",
       "sHEEE 😜",
       "let's goooo 🚀",
       "dreams do come true ✨",
       "woot woot 🥳",
       "pop off! 🙌",
       "BREAKING NEWS: You're copping a pack, sources tell WOJ 🚨",
-      "we got a BIG BALLER up in here! 💥"
+      "we got a BIG BALLER up in here! 💥",
+      "spam pogs in the chat babyyy 💥",
+      "what it do BABY 🔥",
+      "imagine wasting your good spot on a simulation 😜"
     ]
 
     let badMessages = [
       "big L 🥺",
+      "go watch pack openings on youtube 🤡",
+      "you seem like someone who doesn't open packs 🥱",
       "you thought 😭",
       "get out the line scrub 🤬",
       "can't even get a fake pack drop 🥴",
+      "I waNt iGuoDOLA 🥴",
       "rebound pack pls 🥺",
       "go read a book 😓",
       "you should find a new hobby 💩",
       "you're probably a Clippers fan, huh 🤡",
-      "well that was anti-climatic ☹️",
+      "f in the chat ☹️",
       "sorry, maybe next drop 🤕",
       "this is starting to get sad 🥱"
     ]
@@ -44,10 +49,10 @@ export default function Drop() {
     let getMessage = (number) => {
       let note = ""
       if(number > 76000){
-        note = badMessages[getRandomArbitrary(0,10)]
+        note = badMessages[getRandomArbitrary(0,13)]
       }
       else{
-        note = goodMessages[getRandomArbitrary(0,7)]
+        note = goodMessages[getRandomArbitrary(0,9)]
       }
       setMessage(<span key={Math.random()} class="animate__animated animate__fadeIn animate__slower">{note}</span>)
     }
