@@ -32,7 +32,7 @@ export default function Menu() {
                     </Scrollspy>
                 </div>
                 <div class="cursor-pointer 2xl:text-2xl text-lg hover:opacity-50">
-                    <Scrollspy offset={0} componentTag="div" items={ ['founders'] } currentClassName="font-bold cursor-pointer 2xl:text-2xl text-lg hover:opacity-50">
+                    <Scrollspy offset={200} componentTag="div" items={ ['founders'] } currentClassName="font-bold cursor-pointer 2xl:text-2xl text-lg hover:opacity-50">
                         <Link to="founders" smooth={true} offset={-40}>founders</Link>
                     </Scrollspy>
                 </div>

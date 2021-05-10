@@ -16,8 +16,7 @@ export default function Drop() {
       "BREAKING NEWS: You're copping a pack, sources tell WOJ 🚨",
       "we got a BIG BALLER up in here! 💥",
       "spam pogs in the chat babyyy 💥",
-      "what it do BABY 🔥",
-      "imagine wasting your good spot on a simulation 😜"
+      "what it do BABY 🔥"
     ]
 
     let badMessages = [
@@ -52,7 +51,7 @@ export default function Drop() {
         note = badMessages[getRandomArbitrary(0,13)]
       }
       else{
-        note = goodMessages[getRandomArbitrary(0,9)]
+        note = goodMessages[getRandomArbitrary(0,8)]
       }
       setMessage(<span key={Math.random()} class="animate__animated animate__fadeIn animate__slower">{note}</span>)
     }
