@@ -17,6 +17,8 @@ export default function Home() {
       <Head>
         <title>TOPSHOT SIMULATOR</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content="NBA Top Shot Simulator. Simulate NBA Top Shot packs and drops.">
+        </meta>
       </Head>
 
       <Container>
