@@ -17,7 +17,7 @@ export default function Founders() {
                   <a href="nbatopshot.com" target="_blank" class="font-bold hover:underline">Lam</a><br/><br/>
                     <span class="font-bold">favorite TS memory</span><br/>
                     selling Gobert his own card <br/><br/>
-                    <span class="font-bold">"i'm very unemployed"</span>
+                    <span class="font-bold">"Non-fungible!!"</span>
                 </p>
 
                 <p class="col-span-1 text-sm border-2 border-b-4 border-black py-8 px-8 bg-green-100">
